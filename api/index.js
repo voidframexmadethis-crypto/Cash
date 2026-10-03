@@ -1,3 +1,21 @@
+// server.js
+import fs from "fs";
+import path from "path";
+import { S3Client, PutObjectCommand, GetObjectCommand, HeadObjectCommand, DeleteObjectCommand, ListObjectsV2Command } from "@aws-sdk/client-s3";
+import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
+import crypto from "crypto";
+import { S3Client as S3Client2, PutObjectCommand as PutObjectCommand2, GetObjectCommand as GetObjectCommand2, HeadObjectCommand as HeadObjectCommand2, DeleteObjectCommand as DeleteObjectCommand2, ListObjectsV2Command as ListObjectsV2Command2 } from "@aws-sdk/client-s3";
+import crypto2 from "crypto";
+import fs3 from "fs";
+import path3 from "path";
+import crypto3 from "crypto";
+import express from "express";
+import path4 from "path";
+import fs4 from "fs";
+import { createServer as createViteServer } from "vite";
+import multer from "multer";
+import fs2 from "fs";
+import path2 from "path";
 var __defProp = Object.defineProperty;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __esm = (fn, res) => function __init() {
@@ -7,8 +25,6 @@ var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
 };
-
-// src/constants/licenses.ts
 var DEFAULT_LICENSE_TEMPLATES;
 var init_licenses = __esm({
   "src/constants/licenses.ts"() {
@@ -64,8 +80,6 @@ var init_licenses = __esm({
     ];
   }
 });
-
-// src/server/licenses.ts
 function getOrCreateLicenseVersion(license) {
   const active = db.getActiveLicenseVersion(license.id);
   if (active && active.price === license.price && active.name === license.name) {
@@ -97,11 +111,12 @@ var init_licenses2 = __esm({
     init_licenses();
   }
 });
-
-// src/server/db.ts
-import fs from "fs";
-import path from "path";
-var DATA_DIR, DB_FILE, DEFAULT_SETTINGS, DEFAULT_COLLECTIONS, JsonDatabase, db;
+var DATA_DIR;
+var DB_FILE;
+var DEFAULT_SETTINGS;
+var DEFAULT_COLLECTIONS;
+var JsonDatabase;
+var db;
 var init_db = __esm({
   "src/server/db.ts"() {
     init_licenses2();
@@ -614,11 +629,6 @@ var init_db = __esm({
     db = new JsonDatabase();
   }
 });
-
-// src/server/r2.ts
-import { S3Client, PutObjectCommand, GetObjectCommand, HeadObjectCommand, DeleteObjectCommand, ListObjectsV2Command } from "@aws-sdk/client-s3";
-import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
-import crypto from "crypto";
 var CloudflareR2StorageAdapter;
 var init_r2 = __esm({
   "src/server/r2.ts"() {
@@ -819,10 +829,6 @@ var init_r2 = __esm({
     };
   }
 });
-
-// src/server/internetArchive.ts
-import { S3Client as S3Client2, PutObjectCommand as PutObjectCommand2, GetObjectCommand as GetObjectCommand2, HeadObjectCommand as HeadObjectCommand2, DeleteObjectCommand as DeleteObjectCommand2, ListObjectsV2Command as ListObjectsV2Command2 } from "@aws-sdk/client-s3";
-import crypto2 from "crypto";
 var InternetArchiveStorageAdapter;
 var init_internetArchive = __esm({
   "src/server/internetArchive.ts"() {
@@ -1013,8 +1019,6 @@ var init_internetArchive = __esm({
     };
   }
 });
-
-// src/server/storageRouter.ts
 var storageRouter_exports = {};
 __export(storageRouter_exports, {
   StorageRouter: () => StorageRouter
@@ -1114,11 +1118,6 @@ var init_storageRouter = __esm({
     };
   }
 });
-
-// src/server/storage.ts
-import fs3 from "fs";
-import path3 from "path";
-import crypto3 from "crypto";
 function generateCanonicalObjectKey(category, entityId, assetType, assetId, ext) {
   const cleanCategory = category.replace(/[^a-z0-9_-]/g, "");
   const cleanId = entityId.replace(/[^a-zA-Z0-9_-]/g, "");
@@ -1127,7 +1126,20 @@ function generateCanonicalObjectKey(category, entityId, assetType, assetId, ext)
   const cleanExt = ext.startsWith(".") ? ext.toLowerCase() : `.${ext.toLowerCase()}`;
   return `${cleanCategory}_${cleanId}_${cleanAssetType}_${cleanAssetId}${cleanExt}`;
 }
-var LocalStorageProvider, r2Endpoint, r2AccessKey, r2SecretKey, r2Bucket, primaryAudioProvider, primaryArtworkProvider, backupAudioProvider, iaAccessKey, iaSecretKey, iaItemName, archiveAudioProvider, StorageOSManager, storageManager;
+var LocalStorageProvider;
+var r2Endpoint;
+var r2AccessKey;
+var r2SecretKey;
+var r2Bucket;
+var primaryAudioProvider;
+var primaryArtworkProvider;
+var backupAudioProvider;
+var iaAccessKey;
+var iaSecretKey;
+var iaItemName;
+var archiveAudioProvider;
+var StorageOSManager;
+var storageManager;
 var init_storage = __esm({
   "src/server/storage.ts"() {
     init_db();
@@ -1406,8 +1418,6 @@ var init_storage = __esm({
     storageManager = new StorageOSManager();
   }
 });
-
-// src/server/testDualStorage.ts
 var testDualStorage_exports = {};
 __export(testDualStorage_exports, {
   runDualStorageSimulation: () => runDualStorageSimulation
@@ -1481,8 +1491,6 @@ var init_testDualStorage = __esm({
     init_storage();
   }
 });
-
-// src/server/featureSwitchboard.ts
 var featureSwitchboard_exports = {};
 __export(featureSwitchboard_exports, {
   FeatureSwitchboard: () => FeatureSwitchboard
@@ -1618,16 +1626,7 @@ var init_featureSwitchboard = __esm({
     };
   }
 });
-
-// server.ts
 init_db();
-import express from "express";
-import path4 from "path";
-import fs4 from "fs";
-import { createServer as createViteServer } from "vite";
-import multer from "multer";
-
-// src/server/paypal.ts
 init_db();
 init_licenses2();
 async function getPayPalAccessToken() {
@@ -1844,8 +1843,6 @@ async function capturePayPalOrderServer(internalOrderId, paypalOrderId, customer
   }
   throw new Error("PayPal credentials not configured on server. Please configure PayPal Client ID & Secret in Payment Settings to process live transactions.");
 }
-
-// src/server/pdt.ts
 init_db();
 async function verifyPDTTransaction(txToken) {
   const settings = db.getSettings();
@@ -1917,8 +1914,6 @@ async function verifyPDTTransaction(txToken) {
     };
   }
 }
-
-// src/server/ipn.ts
 init_db();
 async function verifyIPNNotification(rawBody) {
   const settings = db.getSettings();
@@ -1977,11 +1972,7 @@ async function verifyIPNNotification(rawBody) {
     };
   }
 }
-
-// src/server/health.ts
 init_db();
-import fs2 from "fs";
-import path2 from "path";
 function runSystemHealthCheck() {
   const settings = db.getSettings();
   const beats = db.getBeats(true, true);
@@ -2092,8 +2083,6 @@ function runSystemHealthCheck() {
   });
   return results;
 }
-
-// server.ts
 init_storage();
 var app = express();
 var PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3e3;
@@ -2726,6 +2715,21 @@ var isDirectExecution = typeof process !== "undefined" && process.argv[1] && (pr
 if (isDirectExecution && !process.env.VERCEL) {
   startServer();
 }
+
+// api/index.ts
+function handler(req, res) {
+  try {
+    return app(req, res);
+  } catch (err) {
+    console.error("Unhandled Vercel serverless function invocation error:", err);
+    if (!res.headersSent) {
+      res.status(500).json({
+        error: err.message || "Serverless function invocation failed",
+        requestId: "req-" + Date.now() + "-" + Math.random().toString(36).substring(2, 7)
+      });
+    }
+  }
+}
 export {
-  app
+  handler as default
 };

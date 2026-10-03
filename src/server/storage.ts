@@ -66,9 +66,14 @@ export class LocalStorageProvider implements IStorageProvider {
     this.name = name;
     this.role = role;
     this.urlPrefix = `/uploads/${baseSubdir}`;
-    this.baseDir = path.resolve(process.cwd(), 'uploads', baseSubdir);
-    if (!fs.existsSync(this.baseDir)) {
-      fs.mkdirSync(this.baseDir, { recursive: true });
+    const baseUploads = process.env.VERCEL ? path.resolve('/tmp', 'uploads') : path.resolve(process.cwd(), 'uploads');
+    this.baseDir = path.resolve(baseUploads, baseSubdir);
+    try {
+      if (!fs.existsSync(this.baseDir)) {
+        fs.mkdirSync(this.baseDir, { recursive: true });
+      }
+    } catch (err) {
+      console.warn(`[LocalStorageProvider] Directory initialization notice for ${this.baseDir}:`, err);
     }
   }
 
@@ -76,7 +81,15 @@ export class LocalStorageProvider implements IStorageProvider {
     const safeKey = path.basename(canonicalKey).replace(/[^a-zA-Z0-9_.-]/g, '_');
     const targetPath = path.resolve(this.baseDir, safeKey);
 
-    fs.writeFileSync(targetPath, fileBuffer);
+    try {
+      if (!fs.existsSync(this.baseDir)) {
+        fs.mkdirSync(this.baseDir, { recursive: true });
+      }
+      fs.writeFileSync(targetPath, fileBuffer);
+    } catch (err) {
+      console.warn(`[LocalStorageProvider] Local file write notice for ${targetPath}:`, err);
+    }
+
     const checksum = crypto.createHash('sha256').update(fileBuffer).digest('hex');
     const objectId = `${this.urlPrefix}/${safeKey}`;
 
@@ -92,7 +105,9 @@ export class LocalStorageProvider implements IStorageProvider {
 
   getObjectPath(objectId: string): string {
     const rel = objectId.startsWith('/') ? objectId.substring(1) : objectId;
-    return path.resolve(process.cwd(), rel);
+    const baseUploads = process.env.VERCEL ? path.resolve('/tmp', 'uploads') : path.resolve(process.cwd(), 'uploads');
+    const sub = rel.startsWith('uploads/') ? rel.substring(8) : rel;
+    return path.resolve(baseUploads, sub);
   }
 
   async getObject(objectId: string): Promise<Buffer | null> {

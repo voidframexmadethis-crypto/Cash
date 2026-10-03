@@ -747,9 +747,11 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
     return next(err);
   }
   console.error('Unhandled server error:', err);
-  if (req.path.startsWith('/api/')) {
+  if (req.path.startsWith('/api') || req.path.startsWith('/uploads')) {
+    const requestId = 'req-' + Date.now() + '-' + Math.random().toString(36).substring(2, 7);
     return res.status(err.status || 500).json({
-      error: err.message || 'Internal server error occurred'
+      error: err.message || 'Internal server error occurred',
+      requestId
     });
   }
   next(err);

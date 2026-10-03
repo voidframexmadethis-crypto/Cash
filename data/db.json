@@ -1,6 +1,40 @@
 {
   "beats": [
     {
+      "id": "beat-1791003252068-gceg",
+      "title": "Cashmere Verified Beat 2026",
+      "producer": "CASHMERE KID$",
+      "artworkUrl": "/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg",
+      "description": "",
+      "bpm": 145,
+      "key": "D Minor",
+      "genre": "Dark Trap",
+      "subgenre": "Underground",
+      "tags": [],
+      "mood": "Aggressive",
+      "dna": {
+        "energy": 80,
+        "darkness": 85,
+        "aggression": 90,
+        "melodicIntensity": 75
+      },
+      "isFeatured": false,
+      "isVault": false,
+      "isDraft": false,
+      "isArchived": false,
+      "isFree": false,
+      "price": 34.99,
+      "audioUrl": "/uploads/audio/Cashmere_Verified_Beat_1791003252038.mp3",
+      "audioAssetId": "asset-1791003252043-wu0as",
+      "format": "mp3",
+      "duration": 150,
+      "createdAt": "2026-10-03T04:54:12.068Z",
+      "updatedAt": "2026-10-03T04:54:12.068Z",
+      "playCount": 0,
+      "downloadCount": 0,
+      "purchaseCount": 0
+    },
+    {
       "id": "beat-1791002395585-h1hz",
       "title": "Cashmere Master Trap Beat 2026",
       "producer": "CASHMERE KID$",
@@ -304,6 +338,18 @@
   "offers": [],
   "messages": [],
   "audioAssets": [
+    {
+      "id": "asset-1791003252043-wu0as",
+      "beatId": "beat-1791003252068-gceg",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 64000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791003252043_audio_asset-1791003252043-wu0as.mp3",
+      "checksum": "3c2ac6f334608497b6166fbd13d2d9f3b498af711d85f7e4c984f8b29b75ea1a",
+      "status": "active",
+      "createdAt": "2026-10-03T04:54:12.049Z"
+    },
     {
       "id": "asset-1791002395572-z2eyn",
       "beatId": "beat-1791002395572",
@@ -860,6 +906,16 @@
   "artworkAssets": [],
   "backupRecords": [
     {
+      "id": "bkp-1791003252050-lov6f",
+      "audioAssetId": "asset-1791003252043-wu0as",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791003252043_audio_asset-1791003252043-wu0as.mp3",
+      "status": "healthy",
+      "checksum": "3c2ac6f334608497b6166fbd13d2d9f3b498af711d85f7e4c984f8b29b75ea1a",
+      "createdAt": "2026-10-03T04:54:12.050Z",
+      "lastVerifiedAt": "2026-10-03T04:54:12.050Z"
+    },
+    {
       "id": "bkp-1791002395575-4gwm0",
       "audioAssetId": "asset-1791002395572-z2eyn",
       "backupProvider": "local_mirror",
@@ -1400,6 +1456,42 @@
   ],
   "projects": [],
   "auditEvents": [
+    {
+      "id": "audit-1791003252068-1ax0k",
+      "eventType": "BEAT_CREATED",
+      "entityType": "beat",
+      "entityId": "beat-1791003252068-gceg",
+      "details": "Created beat Cashmere Verified Beat 2026",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:54:12.068Z"
+    },
+    {
+      "id": "audit-1791003252050-lj9yi",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791003252050-lov6f",
+      "details": "Created backup for audio asset asset-1791003252043-wu0as",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:54:12.050Z"
+    },
+    {
+      "id": "audit-1791003252049-d3h3o",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791003252043-wu0as",
+      "details": "Created audio asset for beat beat-1791003252043",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:54:12.049Z"
+    },
+    {
+      "id": "audit-1791003252048-siyn4",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 64000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:54:12.048Z"
+    },
     {
       "id": "audit-1791002401282-4cp35",
       "eventType": "STORAGE_ROUTED_TO_R2",

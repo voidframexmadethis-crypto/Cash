@@ -32,7 +32,9 @@ export interface DatabaseSchema {
   }[];
 }
 
-const DATA_DIR = path.resolve(process.cwd(), 'data');
+const DATA_DIR = process.env.VERCEL 
+  ? path.resolve('/tmp', 'data') 
+  : path.resolve(process.cwd(), 'data');
 const DB_FILE = path.resolve(DATA_DIR, 'db.json');
 
 const DEFAULT_SETTINGS: StoreSettings = {
@@ -75,21 +77,38 @@ class JsonDatabase {
   }
 
   private ensureDirs() {
-    if (!fs.existsSync(DATA_DIR)) {
-      fs.mkdirSync(DATA_DIR, { recursive: true });
+    try {
+      if (!fs.existsSync(DATA_DIR)) {
+        fs.mkdirSync(DATA_DIR, { recursive: true });
+      }
+      const baseUploads = process.env.VERCEL ? path.resolve('/tmp', 'uploads') : path.resolve(process.cwd(), 'uploads');
+      const audioDir = path.resolve(baseUploads, 'audio');
+      const artworkDir = path.resolve(baseUploads, 'artwork');
+      const backupDir = path.resolve(baseUploads, 'backups');
+      if (!fs.existsSync(baseUploads)) fs.mkdirSync(baseUploads, { recursive: true });
+      if (!fs.existsSync(audioDir)) fs.mkdirSync(audioDir, { recursive: true });
+      if (!fs.existsSync(artworkDir)) fs.mkdirSync(artworkDir, { recursive: true });
+      if (!fs.existsSync(backupDir)) fs.mkdirSync(backupDir, { recursive: true });
+    } catch (err) {
+      console.warn('[Database] Directory initialization notice:', err);
     }
-    const uploadsDir = path.resolve(process.cwd(), 'uploads');
-    const audioDir = path.resolve(uploadsDir, 'audio');
-    const artworkDir = path.resolve(uploadsDir, 'artwork');
-    const backupDir = path.resolve(uploadsDir, 'backups');
-    if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true });
-    if (!fs.existsSync(audioDir)) fs.mkdirSync(audioDir, { recursive: true });
-    if (!fs.existsSync(artworkDir)) fs.mkdirSync(artworkDir, { recursive: true });
-    if (!fs.existsSync(backupDir)) fs.mkdirSync(backupDir, { recursive: true });
   }
 
   private load(): DatabaseSchema {
     try {
+      // In Vercel serverless environment, if /tmp/data/db.json does not exist, seed from packaged data/db.json
+      if (process.env.VERCEL && !fs.existsSync(DB_FILE)) {
+        const seedPath = path.resolve(process.cwd(), 'data', 'db.json');
+        if (fs.existsSync(seedPath)) {
+          try {
+            if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+            fs.copyFileSync(seedPath, DB_FILE);
+          } catch (seedErr) {
+            console.warn('[Database] Seed copy notice:', seedErr);
+          }
+        }
+      }
+
       if (fs.existsSync(DB_FILE)) {
         const raw = fs.readFileSync(DB_FILE, 'utf-8');
         const parsed = JSON.parse(raw);
@@ -171,9 +190,12 @@ class JsonDatabase {
   private save(dataToSave?: DatabaseSchema) {
     try {
       const data = dataToSave || this.data;
+      if (!fs.existsSync(DATA_DIR)) {
+        fs.mkdirSync(DATA_DIR, { recursive: true });
+      }
       fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2), 'utf-8');
     } catch (err) {
-      console.error('Failed to write database to disk:', err);
+      console.warn('Failed to write database to disk:', err);
     }
   }
 
