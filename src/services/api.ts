@@ -1,6 +1,8 @@
 import { Beat, BeatPack, Collection, Order, MerchItem, YouTubeVideo, StoreSettings } from '../types';
 
-const API_BASE = '';
+const API_BASE = (typeof window !== 'undefined' && (window as any).__CASHMERE_API_BASE__) 
+  || import.meta.env.VITE_API_BASE 
+  || '';
 
 export async function fetchPublicSettings(): Promise<StoreSettings> {
   const res = await fetch(`${API_BASE}/api/settings/public`);

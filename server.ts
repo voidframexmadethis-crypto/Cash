@@ -14,6 +14,28 @@ import { storageManager, primaryAudioProvider, backupAudioProvider, archiveAudio
 const app = express();
 const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
+// Enable Cross-Origin Resource Sharing (CORS) for all client domains
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization, Range');
+  res.header('Access-Control-Expose-Headers', 'Content-Range, Accept-Ranges, Content-Length, Content-Type');
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(200);
+  }
+  next();
+});
+
+// Normalize serverless routing: ensure requests arriving with or without /api prefix reach routes
+app.use((req, res, next) => {
+  if (!req.url.startsWith('/api') && !req.url.startsWith('/uploads') && !req.url.startsWith('/src') && !req.url.startsWith('/@') && !req.url.startsWith('/assets')) {
+    if (req.url.startsWith('/admin') || req.url.startsWith('/beats') || req.url.startsWith('/packs') || req.url.startsWith('/settings') || req.url.startsWith('/paypal') || req.url.startsWith('/vault') || req.url.startsWith('/merch') || req.url.startsWith('/youtube') || req.url.startsWith('/health')) {
+      req.url = '/api' + req.url;
+    }
+  }
+  next();
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -23,7 +45,8 @@ const storage = multer.diskStorage({
     const origExt = path.extname(file.originalname || '').toLowerCase();
     const mime = (file.mimetype || '').toLowerCase();
     const isAudio = mime.includes('audio') || origExt === '.m4a' || origExt === '.mp3';
-    const dest = isAudio ? path.resolve(process.cwd(), 'uploads/audio') : path.resolve(process.cwd(), 'uploads/artwork');
+    const baseUploads = process.env.VERCEL ? '/tmp/uploads' : path.resolve(process.cwd(), 'uploads');
+    const dest = isAudio ? path.resolve(baseUploads, 'audio') : path.resolve(baseUploads, 'artwork');
     if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
     cb(null, dest);
   },
@@ -67,7 +90,8 @@ const authAdmin = (req: express.Request, res: express.Response, next: express.Ne
 // --- AUDIO STREAMING WITH HTTP RANGE SUPPORT ---
 app.use('/uploads', (req, res, next) => {
   const cleanPath = req.path.startsWith('/') ? req.path.substring(1) : req.path;
-  const filePath = path.resolve(process.cwd(), 'uploads', cleanPath);
+  const baseUploads = process.env.VERCEL ? '/tmp/uploads' : path.resolve(process.cwd(), 'uploads');
+  const filePath = path.resolve(baseUploads, cleanPath);
 
   if (!fs.existsSync(filePath)) {
     return res.status(404).json({ error: 'File not found on server.' });
@@ -563,7 +587,8 @@ app.post('/api/admin/upload', authAdmin, (req, res) => {
       const format = ext === '.m4a' ? 'm4a' : ext === '.mp3' ? 'mp3' : ext === '.zip' ? 'zip' : isArtwork ? 'jpg' : 'mp3';
       const subfolder = isArtwork ? 'artwork' : 'audio';
       const relativeUrl = `/uploads/${subfolder}/${req.file.filename}`;
-      const filePath = path.resolve(process.cwd(), '.' + relativeUrl);
+      const baseUploads = process.env.VERCEL ? '/tmp/uploads' : path.resolve(process.cwd(), 'uploads');
+      const filePath = path.resolve(baseUploads, subfolder, req.file.filename);
 
       let audioAssetId: string | undefined;
 
@@ -740,7 +765,10 @@ async function startServer() {
   } else {
     const distPath = path.resolve(process.cwd(), 'dist');
     app.use(express.static(distPath));
-    app.get('*', (req, res) => {
+    app.get('*', (req, res, next) => {
+      if (req.path.startsWith('/api') || req.path.startsWith('/uploads')) {
+        return next();
+      }
       res.sendFile(path.resolve(distPath, 'index.html'));
     });
   }
@@ -750,7 +778,12 @@ async function startServer() {
   });
 }
 
-if (process.env.VERCEL !== '1') {
+// Only run startServer() if directly executed (e.g. `tsx server.ts` or `node server.js`), not when imported in serverless functions
+const isDirectExecution = typeof process !== 'undefined' && 
+  process.argv[1] && 
+  (process.argv[1].endsWith('server.ts') || process.argv[1].endsWith('server.js') || process.argv[1].endsWith('tsx'));
+
+if (isDirectExecution && !process.env.VERCEL) {
   startServer();
 }
 
