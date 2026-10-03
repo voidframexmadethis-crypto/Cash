@@ -1,0 +1,2134 @@
+{
+  "beats": [
+    {
+      "id": "beat-1791001160062-wdsa",
+      "title": "Cashmere Luxury Beat 2026",
+      "producer": "CASHMERE KID$",
+      "artworkUrl": "/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg",
+      "description": "",
+      "bpm": 142,
+      "key": "F# Minor",
+      "genre": "Dark Trap",
+      "subgenre": "Underground",
+      "tags": [],
+      "mood": "Aggressive",
+      "dna": {
+        "energy": 80,
+        "darkness": 85,
+        "aggression": 90,
+        "melodicIntensity": 75
+      },
+      "isFeatured": false,
+      "isVault": false,
+      "isDraft": false,
+      "isArchived": false,
+      "isFree": false,
+      "price": 34.99,
+      "audioUrl": "/uploads/audio/Beat_Stem__iPad_Export__1791001160040.m4a",
+      "audioAssetId": "asset-1791001160041-0y3pn",
+      "format": "m4a",
+      "duration": 150,
+      "createdAt": "2026-10-03T04:19:20.062Z",
+      "updatedAt": "2026-10-03T04:19:20.062Z",
+      "playCount": 0,
+      "downloadCount": 0,
+      "purchaseCount": 0
+    },
+    {
+      "id": "beat-1791001135503-ghmk",
+      "title": "Cashmere Luxury Beat 2026",
+      "producer": "CASHMERE KID$",
+      "artworkUrl": "/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg",
+      "description": "",
+      "bpm": 142,
+      "key": "F# Minor",
+      "genre": "Dark Trap",
+      "subgenre": "Underground",
+      "tags": [],
+      "mood": "Aggressive",
+      "dna": {
+        "energy": 80,
+        "darkness": 85,
+        "aggression": 90,
+        "melodicIntensity": 75
+      },
+      "isFeatured": false,
+      "isVault": false,
+      "isDraft": false,
+      "isArchived": false,
+      "isFree": false,
+      "price": 34.99,
+      "audioUrl": "/uploads/audio/Beat_Stem__iPad_Export__1791001135470.m4a",
+      "audioAssetId": "asset-1791001135471-wgxft",
+      "format": "m4a",
+      "duration": 150,
+      "createdAt": "2026-10-03T04:18:55.503Z",
+      "updatedAt": "2026-10-03T04:18:55.503Z",
+      "playCount": 0,
+      "downloadCount": 0,
+      "purchaseCount": 0
+    },
+    {
+      "id": "beat-1791001115373-d797",
+      "title": "Cashmere Regression Beat 2026",
+      "producer": "CASHMERE KID$",
+      "artworkUrl": "/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg",
+      "description": "",
+      "bpm": 142,
+      "key": "F# Minor",
+      "genre": "Dark Trap",
+      "subgenre": "Underground",
+      "tags": [],
+      "mood": "Aggressive",
+      "dna": {
+        "energy": 80,
+        "darkness": 85,
+        "aggression": 90,
+        "melodicIntensity": 75
+      },
+      "isFeatured": false,
+      "isVault": false,
+      "isDraft": false,
+      "isArchived": false,
+      "isFree": false,
+      "price": 34.99,
+      "audioUrl": "/uploads/audio/Beat_Stem__iPad_Export__1791001115352.m4a",
+      "audioAssetId": "asset-1791001115352-kbe7e",
+      "format": "mp3",
+      "duration": 150,
+      "createdAt": "2026-10-03T04:18:35.373Z",
+      "updatedAt": "2026-10-03T04:18:35.373Z",
+      "playCount": 0,
+      "downloadCount": 0,
+      "purchaseCount": 0
+    },
+    {
+      "id": "beat-1791001100033-niyk",
+      "title": "Cashmere Regression Beat 2026",
+      "producer": "CASHMERE KID$",
+      "artworkUrl": "/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg",
+      "description": "",
+      "bpm": 142,
+      "key": "F# Minor",
+      "genre": "Dark Trap",
+      "subgenre": "Underground",
+      "tags": [],
+      "mood": "Aggressive",
+      "dna": {
+        "energy": 80,
+        "darkness": 85,
+        "aggression": 90,
+        "melodicIntensity": 75
+      },
+      "isFeatured": false,
+      "isVault": false,
+      "isDraft": false,
+      "isArchived": false,
+      "isFree": false,
+      "price": 34.99,
+      "audioUrl": "/uploads/audio/dark-trap_vip_mix-01_1791001100004.mp3",
+      "audioAssetId": "asset-1791001100005-28gcf",
+      "format": "mp3",
+      "duration": 150,
+      "createdAt": "2026-10-03T04:18:20.033Z",
+      "updatedAt": "2026-10-03T04:18:20.033Z",
+      "playCount": 0,
+      "downloadCount": 0,
+      "purchaseCount": 0
+    }
+  ],
+  "beatPacks": [],
+  "collections": [
+    {
+      "id": "col-1",
+      "name": "Trap",
+      "slug": "trap",
+      "description": "Hard 808s and crisp hi-hats",
+      "artworkUrl": "/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg",
+      "beatIds": [],
+      "createdAt": "2026-10-03T00:35:05.145Z"
+    },
+    {
+      "id": "col-2",
+      "name": "Freestyle Trap",
+      "slug": "freestyle-trap",
+      "description": "Open space beats for raw delivery",
+      "artworkUrl": "/src/assets/images/hero_cashmere_kids_1790977501320.jpg",
+      "beatIds": [],
+      "createdAt": "2026-10-03T00:35:05.145Z"
+    },
+    {
+      "id": "col-3",
+      "name": "Dark Trap",
+      "slug": "dark-trap",
+      "description": "Underground dark atmospheric beats",
+      "artworkUrl": "/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg",
+      "beatIds": [],
+      "createdAt": "2026-10-03T00:35:05.145Z"
+    },
+    {
+      "id": "col-4",
+      "name": "Future Trap",
+      "slug": "future-trap",
+      "description": "Futuristic synth driven trap",
+      "artworkUrl": "/src/assets/images/hero_cashmere_kids_1790977501320.jpg",
+      "beatIds": [],
+      "createdAt": "2026-10-03T00:35:05.145Z"
+    },
+    {
+      "id": "col-5",
+      "name": "Melodic Trap",
+      "slug": "melodic-trap",
+      "description": "Catchy synth and piano melodies",
+      "artworkUrl": "/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg",
+      "beatIds": [],
+      "createdAt": "2026-10-03T00:35:05.145Z"
+    },
+    {
+      "id": "col-6",
+      "name": "Hard",
+      "slug": "hard",
+      "description": "Heavyweight bass & aggressive beats",
+      "artworkUrl": "/src/assets/images/hero_cashmere_kids_1790977501320.jpg",
+      "beatIds": [],
+      "createdAt": "2026-10-03T00:35:05.145Z"
+    },
+    {
+      "id": "col-7",
+      "name": "Cinematic",
+      "slug": "cinematic",
+      "description": "Orchestral dark movie-score trap",
+      "artworkUrl": "/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg",
+      "beatIds": [],
+      "createdAt": "2026-10-03T00:35:05.145Z"
+    },
+    {
+      "id": "col-8",
+      "name": "Free Beats",
+      "slug": "free-beats",
+      "description": "Legitimate free download releases",
+      "artworkUrl": "/src/assets/images/hero_cashmere_kids_1790977501320.jpg",
+      "beatIds": [],
+      "createdAt": "2026-10-03T00:35:05.145Z"
+    }
+  ],
+  "orders": [],
+  "merch": [],
+  "youtube": [],
+  "settings": {
+    "storeName": "CASHMERE KID$",
+    "producerName": "CASHMERE KID$",
+    "bio": "Independent trap producer creating luxury underground beats, hard-hitting 808s, and ambient melodies.",
+    "bannerUrl": "/src/assets/images/hero_cashmere_kids_1790977501320.jpg",
+    "profileImageUrl": "/src/assets/images/producer_cashmere_kids_1790977511588.jpg",
+    "paypalClientId": "",
+    "paypalSecret": "",
+    "paypalMode": "sandbox",
+    "adminPasscodeHash": "199927",
+    "currency": "USD",
+    "socialLinks": {
+      "youtube": "https://youtube.com",
+      "instagram": "https://instagram.com",
+      "twitter": "https://twitter.com",
+      "spotify": "https://spotify.com"
+    }
+  },
+  "offers": [],
+  "messages": [],
+  "audioAssets": [
+    {
+      "id": "asset-1791001160041-0y3pn",
+      "beatId": "beat-1791001160062-wdsa",
+      "format": "m4a",
+      "mimeType": "audio/mp4",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001160041_audio_asset-1791001160041-0y3pn.m4a",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "status": "active",
+      "createdAt": "2026-10-03T04:19:20.043Z"
+    },
+    {
+      "id": "asset-1791001160035-u4ryt",
+      "beatId": "beat-1791001160035",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001160035_audio_asset-1791001160035-u4ryt.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:19:20.037Z"
+    },
+    {
+      "id": "asset-1791001160030-vc75d",
+      "beatId": "beat-1791001160030",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001160030_audio_asset-1791001160030-vc75d.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:19:20.031Z"
+    },
+    {
+      "id": "asset-1791001160024-4j33n",
+      "beatId": "beat-1791001160024",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001160024_audio_asset-1791001160024-4j33n.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:19:20.026Z"
+    },
+    {
+      "id": "asset-1791001160017-wyy1q",
+      "beatId": "beat-1791001160017",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001160017_audio_asset-1791001160017-wyy1q.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:19:20.019Z"
+    },
+    {
+      "id": "asset-1791001160011-e9e88",
+      "beatId": "beat-1791001160011",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001160011_audio_asset-1791001160011-e9e88.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:19:20.012Z"
+    },
+    {
+      "id": "asset-1791001160004-lfop8",
+      "beatId": "beat-1791001160004",
+      "format": "m4a",
+      "mimeType": "audio/mp4",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001160004_audio_asset-1791001160004-lfop8.m4a",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "status": "active",
+      "createdAt": "2026-10-03T04:19:20.006Z"
+    },
+    {
+      "id": "asset-1791001159991-ohla8",
+      "beatId": "beat-1791001159990",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001159990_audio_asset-1791001159991-ohla8.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:19:19.995Z"
+    },
+    {
+      "id": "asset-1791001135471-wgxft",
+      "beatId": "beat-1791001135503-ghmk",
+      "format": "m4a",
+      "mimeType": "audio/mp4",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001135471_audio_asset-1791001135471-wgxft.m4a",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:55.476Z"
+    },
+    {
+      "id": "asset-1791001135461-61zhd",
+      "beatId": "beat-1791001135461",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001135461_audio_asset-1791001135461-61zhd.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:55.464Z"
+    },
+    {
+      "id": "asset-1791001135456-r39kg",
+      "beatId": "beat-1791001135456",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001135456_audio_asset-1791001135456-r39kg.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:55.458Z"
+    },
+    {
+      "id": "asset-1791001135450-ptkun",
+      "beatId": "beat-1791001135450",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001135450_audio_asset-1791001135450-ptkun.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:55.452Z"
+    },
+    {
+      "id": "asset-1791001135443-tgv6c",
+      "beatId": "beat-1791001135443",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001135443_audio_asset-1791001135443-tgv6c.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:55.445Z"
+    },
+    {
+      "id": "asset-1791001135438-6nq03",
+      "beatId": "beat-1791001135438",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001135438_audio_asset-1791001135438-6nq03.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:55.440Z"
+    },
+    {
+      "id": "asset-1791001135432-l64t5",
+      "beatId": "beat-1791001135432",
+      "format": "m4a",
+      "mimeType": "audio/mp4",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001135432_audio_asset-1791001135432-l64t5.m4a",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:55.434Z"
+    },
+    {
+      "id": "asset-1791001135420-tfivd",
+      "beatId": "beat-1791001135420",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001135420_audio_asset-1791001135420-tfivd.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:55.423Z"
+    },
+    {
+      "id": "asset-1791001115352-kbe7e",
+      "beatId": "beat-1791001115373-d797",
+      "format": "m4a",
+      "mimeType": "audio/mp4",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001115352_audio_asset-1791001115352-kbe7e.m4a",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:35.354Z"
+    },
+    {
+      "id": "asset-1791001115348-ht9fr",
+      "beatId": "beat-1791001115348",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001115348_audio_asset-1791001115348-ht9fr.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:35.349Z"
+    },
+    {
+      "id": "asset-1791001115343-57q9z",
+      "beatId": "beat-1791001115343",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001115343_audio_asset-1791001115343-57q9z.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:35.344Z"
+    },
+    {
+      "id": "asset-1791001115338-zsgbh",
+      "beatId": "beat-1791001115338",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001115338_audio_asset-1791001115338-zsgbh.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:35.340Z"
+    },
+    {
+      "id": "asset-1791001115333-htyuq",
+      "beatId": "beat-1791001115333",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001115333_audio_asset-1791001115333-htyuq.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:35.334Z"
+    },
+    {
+      "id": "asset-1791001115328-usq0v",
+      "beatId": "beat-1791001115328",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001115328_audio_asset-1791001115328-usq0v.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:35.329Z"
+    },
+    {
+      "id": "asset-1791001115322-36n6a",
+      "beatId": "beat-1791001115322",
+      "format": "m4a",
+      "mimeType": "audio/mp4",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001115322_audio_asset-1791001115322-36n6a.m4a",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:35.323Z"
+    },
+    {
+      "id": "asset-1791001115310-2a6gr",
+      "beatId": "beat-1791001115310",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001115310_audio_asset-1791001115310-2a6gr.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:35.314Z"
+    },
+    {
+      "id": "asset-1791001100005-28gcf",
+      "beatId": "beat-1791001100005",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001100005_audio_asset-1791001100005-28gcf.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:20.006Z"
+    },
+    {
+      "id": "asset-1791001099999-nhn01",
+      "beatId": "beat-1791001099999",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001099999_audio_asset-1791001099999-nhn01.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:20.000Z"
+    },
+    {
+      "id": "asset-1791001099990-1rizc",
+      "beatId": "beat-1791001099990",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001099990_audio_asset-1791001099990-1rizc.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:19.992Z"
+    },
+    {
+      "id": "asset-1791001099981-fmmf8",
+      "beatId": "beat-1791001099981",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001099981_audio_asset-1791001099981-fmmf8.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:19.983Z"
+    },
+    {
+      "id": "asset-1791001099968-xfhjr",
+      "beatId": "beat-1791001099968",
+      "format": "m4a",
+      "mimeType": "audio/mp4",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001099968_audio_asset-1791001099968-xfhjr.m4a",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:19.970Z"
+    },
+    {
+      "id": "asset-1791001099959-i7wub",
+      "beatId": "beat-1791001099959",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 50000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001099959_audio_asset-1791001099959-i7wub.mp3",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "status": "active",
+      "createdAt": "2026-10-03T04:18:19.961Z"
+    },
+    {
+      "id": "asset-1791001004518-5awkt",
+      "beatId": "beat-1791001004518",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 67,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001004518_audio_asset-1791001004518-5awkt.mp3",
+      "checksum": "857526dba5f4cb9db8732725f8c1c2dc6ea97ed9272aa49c9cb03c3fbbbd3227",
+      "status": "active",
+      "createdAt": "2026-10-03T04:16:44.519Z"
+    },
+    {
+      "id": "asset-1791001004515-ejkrp",
+      "beatId": "beat-1791001004515",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 67,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001004515_audio_asset-1791001004515-ejkrp.mp3",
+      "checksum": "857526dba5f4cb9db8732725f8c1c2dc6ea97ed9272aa49c9cb03c3fbbbd3227",
+      "status": "active",
+      "createdAt": "2026-10-03T04:16:44.516Z"
+    },
+    {
+      "id": "asset-1791001004511-ons1w",
+      "beatId": "beat-1791001004511",
+      "format": "m4a",
+      "mimeType": "audio/mp4",
+      "fileSize": 67,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001004511_audio_asset-1791001004511-ons1w.m4a",
+      "checksum": "857526dba5f4cb9db8732725f8c1c2dc6ea97ed9272aa49c9cb03c3fbbbd3227",
+      "status": "active",
+      "createdAt": "2026-10-03T04:16:44.513Z"
+    },
+    {
+      "id": "asset-1791001004508-r66z8",
+      "beatId": "beat-1791001004508",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 67,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001004508_audio_asset-1791001004508-r66z8.mp3",
+      "checksum": "857526dba5f4cb9db8732725f8c1c2dc6ea97ed9272aa49c9cb03c3fbbbd3227",
+      "status": "active",
+      "createdAt": "2026-10-03T04:16:44.509Z"
+    },
+    {
+      "id": "asset-1791001004505-k2idn",
+      "beatId": "beat-1791001004505",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 67,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791001004505_audio_asset-1791001004505-k2idn.mp3",
+      "checksum": "857526dba5f4cb9db8732725f8c1c2dc6ea97ed9272aa49c9cb03c3fbbbd3227",
+      "status": "active",
+      "createdAt": "2026-10-03T04:16:44.506Z"
+    },
+    {
+      "id": "asset-1791000908419-x9qay",
+      "beatId": "beat-1791000908418",
+      "format": "mp3",
+      "mimeType": "audio/mpeg",
+      "fileSize": 1000,
+      "storageProvider": "local_primary_audio",
+      "storageObjectId": "/uploads/audio/beats_beat-1791000908418_audio_asset-1791000908419-x9qay.mp3",
+      "checksum": "541b3e9daa09b20bf85fa273e5cbd3e80185aa4ec298e765db87742b70138a53",
+      "status": "active",
+      "createdAt": "2026-10-03T04:15:08.421Z"
+    }
+  ],
+  "artworkAssets": [],
+  "backupRecords": [
+    {
+      "id": "bkp-1791001160044-e9wpd",
+      "audioAssetId": "asset-1791001160041-0y3pn",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001160041_audio_asset-1791001160041-0y3pn.m4a",
+      "status": "healthy",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "createdAt": "2026-10-03T04:19:20.044Z",
+      "lastVerifiedAt": "2026-10-03T04:19:20.044Z"
+    },
+    {
+      "id": "bkp-1791001160038-bf5ig",
+      "audioAssetId": "asset-1791001160035-u4ryt",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001160035_audio_asset-1791001160035-u4ryt.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:19:20.038Z",
+      "lastVerifiedAt": "2026-10-03T04:19:20.038Z"
+    },
+    {
+      "id": "bkp-1791001160032-ev9oy",
+      "audioAssetId": "asset-1791001160030-vc75d",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001160030_audio_asset-1791001160030-vc75d.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:19:20.032Z",
+      "lastVerifiedAt": "2026-10-03T04:19:20.032Z"
+    },
+    {
+      "id": "bkp-1791001160026-yw61v",
+      "audioAssetId": "asset-1791001160024-4j33n",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001160024_audio_asset-1791001160024-4j33n.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:19:20.026Z",
+      "lastVerifiedAt": "2026-10-03T04:19:20.026Z"
+    },
+    {
+      "id": "bkp-1791001160019-7xkij",
+      "audioAssetId": "asset-1791001160017-wyy1q",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001160017_audio_asset-1791001160017-wyy1q.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:19:20.020Z",
+      "lastVerifiedAt": "2026-10-03T04:19:20.020Z"
+    },
+    {
+      "id": "bkp-1791001160013-bm4b4",
+      "audioAssetId": "asset-1791001160011-e9e88",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001160011_audio_asset-1791001160011-e9e88.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:19:20.013Z",
+      "lastVerifiedAt": "2026-10-03T04:19:20.013Z"
+    },
+    {
+      "id": "bkp-1791001160006-njuve",
+      "audioAssetId": "asset-1791001160004-lfop8",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001160004_audio_asset-1791001160004-lfop8.m4a",
+      "status": "healthy",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "createdAt": "2026-10-03T04:19:20.006Z",
+      "lastVerifiedAt": "2026-10-03T04:19:20.006Z"
+    },
+    {
+      "id": "bkp-1791001159995-r5e64",
+      "audioAssetId": "asset-1791001159991-ohla8",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001159990_audio_asset-1791001159991-ohla8.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:19:19.995Z",
+      "lastVerifiedAt": "2026-10-03T04:19:19.995Z"
+    },
+    {
+      "id": "bkp-1791001135477-888wp",
+      "audioAssetId": "asset-1791001135471-wgxft",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001135471_audio_asset-1791001135471-wgxft.m4a",
+      "status": "healthy",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "createdAt": "2026-10-03T04:18:55.477Z",
+      "lastVerifiedAt": "2026-10-03T04:18:55.477Z"
+    },
+    {
+      "id": "bkp-1791001135465-k36dk",
+      "audioAssetId": "asset-1791001135461-61zhd",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001135461_audio_asset-1791001135461-61zhd.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:55.465Z",
+      "lastVerifiedAt": "2026-10-03T04:18:55.465Z"
+    },
+    {
+      "id": "bkp-1791001135458-6k2v0",
+      "audioAssetId": "asset-1791001135456-r39kg",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001135456_audio_asset-1791001135456-r39kg.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:55.458Z",
+      "lastVerifiedAt": "2026-10-03T04:18:55.458Z"
+    },
+    {
+      "id": "bkp-1791001135452-v28so",
+      "audioAssetId": "asset-1791001135450-ptkun",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001135450_audio_asset-1791001135450-ptkun.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:55.452Z",
+      "lastVerifiedAt": "2026-10-03T04:18:55.452Z"
+    },
+    {
+      "id": "bkp-1791001135446-xesr2",
+      "audioAssetId": "asset-1791001135443-tgv6c",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001135443_audio_asset-1791001135443-tgv6c.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:55.446Z",
+      "lastVerifiedAt": "2026-10-03T04:18:55.446Z"
+    },
+    {
+      "id": "bkp-1791001135440-fnnax",
+      "audioAssetId": "asset-1791001135438-6nq03",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001135438_audio_asset-1791001135438-6nq03.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:55.440Z",
+      "lastVerifiedAt": "2026-10-03T04:18:55.440Z"
+    },
+    {
+      "id": "bkp-1791001135434-qu6lc",
+      "audioAssetId": "asset-1791001135432-l64t5",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001135432_audio_asset-1791001135432-l64t5.m4a",
+      "status": "healthy",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "createdAt": "2026-10-03T04:18:55.434Z",
+      "lastVerifiedAt": "2026-10-03T04:18:55.434Z"
+    },
+    {
+      "id": "bkp-1791001135424-a1gn9",
+      "audioAssetId": "asset-1791001135420-tfivd",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001135420_audio_asset-1791001135420-tfivd.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:55.424Z",
+      "lastVerifiedAt": "2026-10-03T04:18:55.424Z"
+    },
+    {
+      "id": "bkp-1791001115355-sbbyq",
+      "audioAssetId": "asset-1791001115352-kbe7e",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001115352_audio_asset-1791001115352-kbe7e.m4a",
+      "status": "healthy",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "createdAt": "2026-10-03T04:18:35.355Z",
+      "lastVerifiedAt": "2026-10-03T04:18:35.355Z"
+    },
+    {
+      "id": "bkp-1791001115349-ehm2e",
+      "audioAssetId": "asset-1791001115348-ht9fr",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001115348_audio_asset-1791001115348-ht9fr.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:35.349Z",
+      "lastVerifiedAt": "2026-10-03T04:18:35.349Z"
+    },
+    {
+      "id": "bkp-1791001115345-7m3hr",
+      "audioAssetId": "asset-1791001115343-57q9z",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001115343_audio_asset-1791001115343-57q9z.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:35.345Z",
+      "lastVerifiedAt": "2026-10-03T04:18:35.345Z"
+    },
+    {
+      "id": "bkp-1791001115340-0mi23",
+      "audioAssetId": "asset-1791001115338-zsgbh",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001115338_audio_asset-1791001115338-zsgbh.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:35.340Z",
+      "lastVerifiedAt": "2026-10-03T04:18:35.340Z"
+    },
+    {
+      "id": "bkp-1791001115335-4ilfd",
+      "audioAssetId": "asset-1791001115333-htyuq",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001115333_audio_asset-1791001115333-htyuq.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:35.335Z",
+      "lastVerifiedAt": "2026-10-03T04:18:35.335Z"
+    },
+    {
+      "id": "bkp-1791001115329-91b21",
+      "audioAssetId": "asset-1791001115328-usq0v",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001115328_audio_asset-1791001115328-usq0v.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:35.329Z",
+      "lastVerifiedAt": "2026-10-03T04:18:35.329Z"
+    },
+    {
+      "id": "bkp-1791001115324-rwgrj",
+      "audioAssetId": "asset-1791001115322-36n6a",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001115322_audio_asset-1791001115322-36n6a.m4a",
+      "status": "healthy",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "createdAt": "2026-10-03T04:18:35.324Z",
+      "lastVerifiedAt": "2026-10-03T04:18:35.324Z"
+    },
+    {
+      "id": "bkp-1791001115314-ls2dk",
+      "audioAssetId": "asset-1791001115310-2a6gr",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001115310_audio_asset-1791001115310-2a6gr.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:35.314Z",
+      "lastVerifiedAt": "2026-10-03T04:18:35.314Z"
+    },
+    {
+      "id": "bkp-1791001100006-ngxb7",
+      "audioAssetId": "asset-1791001100005-28gcf",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001100005_audio_asset-1791001100005-28gcf.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:20.006Z",
+      "lastVerifiedAt": "2026-10-03T04:18:20.006Z"
+    },
+    {
+      "id": "bkp-1791001100001-1fwb2",
+      "audioAssetId": "asset-1791001099999-nhn01",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001099999_audio_asset-1791001099999-nhn01.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:20.001Z",
+      "lastVerifiedAt": "2026-10-03T04:18:20.001Z"
+    },
+    {
+      "id": "bkp-1791001099992-lrdx0",
+      "audioAssetId": "asset-1791001099990-1rizc",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001099990_audio_asset-1791001099990-1rizc.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:19.992Z",
+      "lastVerifiedAt": "2026-10-03T04:18:19.992Z"
+    },
+    {
+      "id": "bkp-1791001099984-8c3ql",
+      "audioAssetId": "asset-1791001099981-fmmf8",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001099981_audio_asset-1791001099981-fmmf8.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:19.984Z",
+      "lastVerifiedAt": "2026-10-03T04:18:19.984Z"
+    },
+    {
+      "id": "bkp-1791001099971-6i7jq",
+      "audioAssetId": "asset-1791001099968-xfhjr",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001099968_audio_asset-1791001099968-xfhjr.m4a",
+      "status": "healthy",
+      "checksum": "0e8d7e3b6a8e6aa385815a40583f860bbb6b306d04dd82a648d3c2b62f6abf4e",
+      "createdAt": "2026-10-03T04:18:19.971Z",
+      "lastVerifiedAt": "2026-10-03T04:18:19.971Z"
+    },
+    {
+      "id": "bkp-1791001099961-3ftaj",
+      "audioAssetId": "asset-1791001099959-i7wub",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001099959_audio_asset-1791001099959-i7wub.mp3",
+      "status": "healthy",
+      "checksum": "50cbe91e7bc072a7a58eef057cad901d2d3eb30e544a6f30ad0b2bd32274f753",
+      "createdAt": "2026-10-03T04:18:19.961Z",
+      "lastVerifiedAt": "2026-10-03T04:18:19.961Z"
+    },
+    {
+      "id": "bkp-1791001004519-fby33",
+      "audioAssetId": "asset-1791001004518-5awkt",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001004518_audio_asset-1791001004518-5awkt.mp3",
+      "status": "healthy",
+      "checksum": "857526dba5f4cb9db8732725f8c1c2dc6ea97ed9272aa49c9cb03c3fbbbd3227",
+      "createdAt": "2026-10-03T04:16:44.519Z",
+      "lastVerifiedAt": "2026-10-03T04:16:44.519Z"
+    },
+    {
+      "id": "bkp-1791001004517-vssz6",
+      "audioAssetId": "asset-1791001004515-ejkrp",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001004515_audio_asset-1791001004515-ejkrp.mp3",
+      "status": "healthy",
+      "checksum": "857526dba5f4cb9db8732725f8c1c2dc6ea97ed9272aa49c9cb03c3fbbbd3227",
+      "createdAt": "2026-10-03T04:16:44.517Z",
+      "lastVerifiedAt": "2026-10-03T04:16:44.517Z"
+    },
+    {
+      "id": "bkp-1791001004514-jqwll",
+      "audioAssetId": "asset-1791001004511-ons1w",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001004511_audio_asset-1791001004511-ons1w.m4a",
+      "status": "healthy",
+      "checksum": "857526dba5f4cb9db8732725f8c1c2dc6ea97ed9272aa49c9cb03c3fbbbd3227",
+      "createdAt": "2026-10-03T04:16:44.514Z",
+      "lastVerifiedAt": "2026-10-03T04:16:44.514Z"
+    },
+    {
+      "id": "bkp-1791001004510-99b8r",
+      "audioAssetId": "asset-1791001004508-r66z8",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001004508_audio_asset-1791001004508-r66z8.mp3",
+      "status": "healthy",
+      "checksum": "857526dba5f4cb9db8732725f8c1c2dc6ea97ed9272aa49c9cb03c3fbbbd3227",
+      "createdAt": "2026-10-03T04:16:44.510Z",
+      "lastVerifiedAt": "2026-10-03T04:16:44.510Z"
+    },
+    {
+      "id": "bkp-1791001004507-eiye9",
+      "audioAssetId": "asset-1791001004505-k2idn",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791001004505_audio_asset-1791001004505-k2idn.mp3",
+      "status": "healthy",
+      "checksum": "857526dba5f4cb9db8732725f8c1c2dc6ea97ed9272aa49c9cb03c3fbbbd3227",
+      "createdAt": "2026-10-03T04:16:44.507Z",
+      "lastVerifiedAt": "2026-10-03T04:16:44.507Z"
+    },
+    {
+      "id": "bkp-1791000908422-nw6cy",
+      "audioAssetId": "asset-1791000908419-x9qay",
+      "backupProvider": "local_mirror",
+      "backupObjectId": "/uploads/backups/beats_beat-1791000908418_audio_asset-1791000908419-x9qay.mp3",
+      "status": "healthy",
+      "checksum": "541b3e9daa09b20bf85fa273e5cbd3e80185aa4ec298e765db87742b70138a53",
+      "createdAt": "2026-10-03T04:15:08.422Z",
+      "lastVerifiedAt": "2026-10-03T04:15:08.422Z"
+    }
+  ],
+  "licenseVersions": [
+    {
+      "id": "licver-lic-standard-v1",
+      "licenseId": "lic-standard",
+      "versionNumber": 1,
+      "name": "Standard M4A/MP3 Lease",
+      "price": 29.99,
+      "description": "Non-exclusive lease for independent music releases.",
+      "fileTypes": [
+        "M4A",
+        "MP3"
+      ],
+      "streamingLimit": "50,000 Streams",
+      "distributionLimit": "2,500 Units",
+      "commercialRights": true,
+      "performanceRights": false,
+      "isExclusive": false,
+      "termsText": "Standard Cashmere Kid$ Standard M4A/MP3 Lease License Terms (v1.0)",
+      "createdAt": "2026-10-03T00:36:56.673Z"
+    },
+    {
+      "id": "licver-lic-premium-v1",
+      "licenseId": "lic-premium",
+      "versionNumber": 1,
+      "name": "Premium Audio Lease",
+      "price": 49.99,
+      "description": "Non-exclusive lease with higher streaming allowances.",
+      "fileTypes": [
+        "M4A",
+        "MP3"
+      ],
+      "streamingLimit": "250,000 Streams",
+      "distributionLimit": "10,000 Units",
+      "commercialRights": true,
+      "performanceRights": true,
+      "isExclusive": false,
+      "termsText": "Standard Cashmere Kid$ Premium Audio Lease License Terms (v1.0)",
+      "createdAt": "2026-10-03T00:36:56.673Z"
+    },
+    {
+      "id": "licver-lic-unlimited-v1",
+      "licenseId": "lic-unlimited",
+      "versionNumber": 1,
+      "name": "Unlimited License",
+      "price": 149.99,
+      "description": "Unlimited streaming and commercial performance rights.",
+      "fileTypes": [
+        "M4A",
+        "MP3"
+      ],
+      "streamingLimit": "Unlimited",
+      "distributionLimit": "Unlimited",
+      "commercialRights": true,
+      "performanceRights": true,
+      "isExclusive": false,
+      "termsText": "Standard Cashmere Kid$ Unlimited License License Terms (v1.0)",
+      "createdAt": "2026-10-03T00:36:56.673Z"
+    },
+    {
+      "id": "licver-lic-exclusive-v1",
+      "licenseId": "lic-exclusive",
+      "versionNumber": 1,
+      "name": "Exclusive Ownership",
+      "price": 499.99,
+      "description": "Full exclusive ownership. Beat is locked and removed from future sale.",
+      "fileTypes": [
+        "M4A",
+        "MP3"
+      ],
+      "streamingLimit": "Unlimited",
+      "distributionLimit": "Unlimited",
+      "commercialRights": true,
+      "performanceRights": true,
+      "isExclusive": true,
+      "termsText": "Standard Cashmere Kid$ Exclusive Ownership License Terms (v1.0)",
+      "createdAt": "2026-10-03T00:36:56.673Z"
+    }
+  ],
+  "projects": [],
+  "auditEvents": [
+    {
+      "id": "audit-1791001172465-516ed",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 1048576 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:19:32.465Z"
+    },
+    {
+      "id": "audit-1791001160062-rsn24",
+      "eventType": "BEAT_CREATED",
+      "entityType": "beat",
+      "entityId": "beat-1791001160062-wdsa",
+      "details": "Created beat Cashmere Luxury Beat 2026",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.062Z"
+    },
+    {
+      "id": "audit-1791001160044-45jbz",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001160044-e9wpd",
+      "details": "Created backup for audio asset asset-1791001160041-0y3pn",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.044Z"
+    },
+    {
+      "id": "audit-1791001160043-h7kuk",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001160041-0y3pn",
+      "details": "Created audio asset for beat beat-1791001160041",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.043Z"
+    },
+    {
+      "id": "audit-1791001160043-zgxas",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:19:20.043Z"
+    },
+    {
+      "id": "audit-1791001160038-mlfut",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001160038-bf5ig",
+      "details": "Created backup for audio asset asset-1791001160035-u4ryt",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.038Z"
+    },
+    {
+      "id": "audit-1791001160037-0orbj",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001160035-u4ryt",
+      "details": "Created audio asset for beat beat-1791001160035",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.037Z"
+    },
+    {
+      "id": "audit-1791001160037-3shqf",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:19:20.037Z"
+    },
+    {
+      "id": "audit-1791001160032-cwe26",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001160032-ev9oy",
+      "details": "Created backup for audio asset asset-1791001160030-vc75d",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.032Z"
+    },
+    {
+      "id": "audit-1791001160031-xpjcg",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001160030-vc75d",
+      "details": "Created audio asset for beat beat-1791001160030",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.031Z"
+    },
+    {
+      "id": "audit-1791001160031-7u5xy",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:19:20.031Z"
+    },
+    {
+      "id": "audit-1791001160026-e1bwb",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001160026-yw61v",
+      "details": "Created backup for audio asset asset-1791001160024-4j33n",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.026Z"
+    },
+    {
+      "id": "audit-1791001160026-v1udx",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001160024-4j33n",
+      "details": "Created audio asset for beat beat-1791001160024",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.026Z"
+    },
+    {
+      "id": "audit-1791001160025-bbdpb",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:19:20.025Z"
+    },
+    {
+      "id": "audit-1791001160020-de02a",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001160019-7xkij",
+      "details": "Created backup for audio asset asset-1791001160017-wyy1q",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.020Z"
+    },
+    {
+      "id": "audit-1791001160019-s98je",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001160017-wyy1q",
+      "details": "Created audio asset for beat beat-1791001160017",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.019Z"
+    },
+    {
+      "id": "audit-1791001160018-bs9mx",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:19:20.018Z"
+    },
+    {
+      "id": "audit-1791001160013-fu72g",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001160013-bm4b4",
+      "details": "Created backup for audio asset asset-1791001160011-e9e88",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.013Z"
+    },
+    {
+      "id": "audit-1791001160012-u45h8",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001160011-e9e88",
+      "details": "Created audio asset for beat beat-1791001160011",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.012Z"
+    },
+    {
+      "id": "audit-1791001160012-7o6lf",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:19:20.012Z"
+    },
+    {
+      "id": "audit-1791001160006-r76ig",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001160006-njuve",
+      "details": "Created backup for audio asset asset-1791001160004-lfop8",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.006Z"
+    },
+    {
+      "id": "audit-1791001160006-n3jrs",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001160004-lfop8",
+      "details": "Created audio asset for beat beat-1791001160004",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:20.006Z"
+    },
+    {
+      "id": "audit-1791001160005-9w1dz",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:19:20.005Z"
+    },
+    {
+      "id": "audit-1791001159995-el463",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001159995-r5e64",
+      "details": "Created backup for audio asset asset-1791001159991-ohla8",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:19.995Z"
+    },
+    {
+      "id": "audit-1791001159995-0sfwf",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001159991-ohla8",
+      "details": "Created audio asset for beat beat-1791001159990",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:19:19.995Z"
+    },
+    {
+      "id": "audit-1791001159994-zmak2",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:19:19.994Z"
+    },
+    {
+      "id": "audit-1791001135503-65y4e",
+      "eventType": "BEAT_CREATED",
+      "entityType": "beat",
+      "entityId": "beat-1791001135503-ghmk",
+      "details": "Created beat Cashmere Luxury Beat 2026",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.503Z"
+    },
+    {
+      "id": "audit-1791001135477-jn10k",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001135477-888wp",
+      "details": "Created backup for audio asset asset-1791001135471-wgxft",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.477Z"
+    },
+    {
+      "id": "audit-1791001135476-se4kz",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001135471-wgxft",
+      "details": "Created audio asset for beat beat-1791001135471",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.476Z"
+    },
+    {
+      "id": "audit-1791001135473-ngp53",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:55.473Z"
+    },
+    {
+      "id": "audit-1791001135465-ohb4i",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001135465-k36dk",
+      "details": "Created backup for audio asset asset-1791001135461-61zhd",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.465Z"
+    },
+    {
+      "id": "audit-1791001135464-brojw",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001135461-61zhd",
+      "details": "Created audio asset for beat beat-1791001135461",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.464Z"
+    },
+    {
+      "id": "audit-1791001135464-jnk7o",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:55.464Z"
+    },
+    {
+      "id": "audit-1791001135458-ncj66",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001135458-6k2v0",
+      "details": "Created backup for audio asset asset-1791001135456-r39kg",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.458Z"
+    },
+    {
+      "id": "audit-1791001135458-7oo9a",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001135456-r39kg",
+      "details": "Created audio asset for beat beat-1791001135456",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.458Z"
+    },
+    {
+      "id": "audit-1791001135457-qih7z",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:55.457Z"
+    },
+    {
+      "id": "audit-1791001135452-fu6r1",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001135452-v28so",
+      "details": "Created backup for audio asset asset-1791001135450-ptkun",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.452Z"
+    },
+    {
+      "id": "audit-1791001135452-a35y1",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001135450-ptkun",
+      "details": "Created audio asset for beat beat-1791001135450",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.452Z"
+    },
+    {
+      "id": "audit-1791001135451-3aaiu",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:55.451Z"
+    },
+    {
+      "id": "audit-1791001135446-0z862",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001135446-xesr2",
+      "details": "Created backup for audio asset asset-1791001135443-tgv6c",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.446Z"
+    },
+    {
+      "id": "audit-1791001135445-0rjts",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001135443-tgv6c",
+      "details": "Created audio asset for beat beat-1791001135443",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.445Z"
+    },
+    {
+      "id": "audit-1791001135445-hoqmt",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:55.445Z"
+    },
+    {
+      "id": "audit-1791001135440-xvucz",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001135440-fnnax",
+      "details": "Created backup for audio asset asset-1791001135438-6nq03",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.440Z"
+    },
+    {
+      "id": "audit-1791001135440-w7bpw",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001135438-6nq03",
+      "details": "Created audio asset for beat beat-1791001135438",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.440Z"
+    },
+    {
+      "id": "audit-1791001135439-pa1t5",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:55.439Z"
+    },
+    {
+      "id": "audit-1791001135434-vq9hu",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001135434-qu6lc",
+      "details": "Created backup for audio asset asset-1791001135432-l64t5",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.434Z"
+    },
+    {
+      "id": "audit-1791001135434-k2cj5",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001135432-l64t5",
+      "details": "Created audio asset for beat beat-1791001135432",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.434Z"
+    },
+    {
+      "id": "audit-1791001135433-g3300",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:55.433Z"
+    },
+    {
+      "id": "audit-1791001135424-cqi8n",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001135424-a1gn9",
+      "details": "Created backup for audio asset asset-1791001135420-tfivd",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.424Z"
+    },
+    {
+      "id": "audit-1791001135423-cklnd",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001135420-tfivd",
+      "details": "Created audio asset for beat beat-1791001135420",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:55.423Z"
+    },
+    {
+      "id": "audit-1791001135423-jrvwf",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:55.423Z"
+    },
+    {
+      "id": "audit-1791001115373-ww4jo",
+      "eventType": "BEAT_CREATED",
+      "entityType": "beat",
+      "entityId": "beat-1791001115373-d797",
+      "details": "Created beat Cashmere Regression Beat 2026",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.373Z"
+    },
+    {
+      "id": "audit-1791001115355-qpx73",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001115355-sbbyq",
+      "details": "Created backup for audio asset asset-1791001115352-kbe7e",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.355Z"
+    },
+    {
+      "id": "audit-1791001115354-dqx35",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001115352-kbe7e",
+      "details": "Created audio asset for beat beat-1791001115352",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.354Z"
+    },
+    {
+      "id": "audit-1791001115354-enw4c",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:35.354Z"
+    },
+    {
+      "id": "audit-1791001115349-frs5t",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001115349-ehm2e",
+      "details": "Created backup for audio asset asset-1791001115348-ht9fr",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.349Z"
+    },
+    {
+      "id": "audit-1791001115349-a2jq4",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001115348-ht9fr",
+      "details": "Created audio asset for beat beat-1791001115348",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.349Z"
+    },
+    {
+      "id": "audit-1791001115349-xawku",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:35.349Z"
+    },
+    {
+      "id": "audit-1791001115345-aytjl",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001115345-7m3hr",
+      "details": "Created backup for audio asset asset-1791001115343-57q9z",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.345Z"
+    },
+    {
+      "id": "audit-1791001115344-55ea4",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001115343-57q9z",
+      "details": "Created audio asset for beat beat-1791001115343",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.344Z"
+    },
+    {
+      "id": "audit-1791001115344-kyej8",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:35.344Z"
+    },
+    {
+      "id": "audit-1791001115340-rei84",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001115340-0mi23",
+      "details": "Created backup for audio asset asset-1791001115338-zsgbh",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.340Z"
+    },
+    {
+      "id": "audit-1791001115340-ah6d4",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001115338-zsgbh",
+      "details": "Created audio asset for beat beat-1791001115338",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.340Z"
+    },
+    {
+      "id": "audit-1791001115339-aouox",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:35.339Z"
+    },
+    {
+      "id": "audit-1791001115335-9uv4z",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001115335-4ilfd",
+      "details": "Created backup for audio asset asset-1791001115333-htyuq",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.335Z"
+    },
+    {
+      "id": "audit-1791001115334-0vcd6",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001115333-htyuq",
+      "details": "Created audio asset for beat beat-1791001115333",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.334Z"
+    },
+    {
+      "id": "audit-1791001115334-pv3i9",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:35.334Z"
+    },
+    {
+      "id": "audit-1791001115329-zrssy",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001115329-91b21",
+      "details": "Created backup for audio asset asset-1791001115328-usq0v",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.329Z"
+    },
+    {
+      "id": "audit-1791001115329-3ki5h",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001115328-usq0v",
+      "details": "Created audio asset for beat beat-1791001115328",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.329Z"
+    },
+    {
+      "id": "audit-1791001115329-z6fvf",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:35.329Z"
+    },
+    {
+      "id": "audit-1791001115324-00p8t",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001115324-rwgrj",
+      "details": "Created backup for audio asset asset-1791001115322-36n6a",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.324Z"
+    },
+    {
+      "id": "audit-1791001115323-8xeo4",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001115322-36n6a",
+      "details": "Created audio asset for beat beat-1791001115322",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.323Z"
+    },
+    {
+      "id": "audit-1791001115323-n6ink",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:35.323Z"
+    },
+    {
+      "id": "audit-1791001115314-3j5zg",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001115314-ls2dk",
+      "details": "Created backup for audio asset asset-1791001115310-2a6gr",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.314Z"
+    },
+    {
+      "id": "audit-1791001115314-ckeuo",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001115310-2a6gr",
+      "details": "Created audio asset for beat beat-1791001115310",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:35.314Z"
+    },
+    {
+      "id": "audit-1791001115313-kf50v",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:35.313Z"
+    },
+    {
+      "id": "audit-1791001100033-dsco0",
+      "eventType": "BEAT_CREATED",
+      "entityType": "beat",
+      "entityId": "beat-1791001100033-niyk",
+      "details": "Created beat Cashmere Regression Beat 2026",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:20.033Z"
+    },
+    {
+      "id": "audit-1791001100006-ohg80",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001100006-ngxb7",
+      "details": "Created backup for audio asset asset-1791001100005-28gcf",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:20.006Z"
+    },
+    {
+      "id": "audit-1791001100006-rz5vr",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001100005-28gcf",
+      "details": "Created audio asset for beat beat-1791001100005",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:20.006Z"
+    },
+    {
+      "id": "audit-1791001100005-f47m5",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:20.005Z"
+    },
+    {
+      "id": "audit-1791001100001-4teod",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001100001-1fwb2",
+      "details": "Created backup for audio asset asset-1791001099999-nhn01",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:20.001Z"
+    },
+    {
+      "id": "audit-1791001100000-mqliw",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001099999-nhn01",
+      "details": "Created audio asset for beat beat-1791001099999",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:20.000Z"
+    },
+    {
+      "id": "audit-1791001100000-qg251",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:20.000Z"
+    },
+    {
+      "id": "audit-1791001099992-xr958",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001099992-lrdx0",
+      "details": "Created backup for audio asset asset-1791001099990-1rizc",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:19.992Z"
+    },
+    {
+      "id": "audit-1791001099992-6c8yn",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001099990-1rizc",
+      "details": "Created audio asset for beat beat-1791001099990",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:19.992Z"
+    },
+    {
+      "id": "audit-1791001099991-7ythx",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:19.991Z"
+    },
+    {
+      "id": "audit-1791001099984-cufnh",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001099984-8c3ql",
+      "details": "Created backup for audio asset asset-1791001099981-fmmf8",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:19.984Z"
+    },
+    {
+      "id": "audit-1791001099983-ty1m0",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001099981-fmmf8",
+      "details": "Created audio asset for beat beat-1791001099981",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:19.983Z"
+    },
+    {
+      "id": "audit-1791001099982-9kxau",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:19.982Z"
+    },
+    {
+      "id": "audit-1791001099971-eu965",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001099971-6i7jq",
+      "details": "Created backup for audio asset asset-1791001099968-xfhjr",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:19.971Z"
+    },
+    {
+      "id": "audit-1791001099970-a7t8v",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001099968-xfhjr",
+      "details": "Created audio asset for beat beat-1791001099968",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:19.970Z"
+    },
+    {
+      "id": "audit-1791001099969-q16sz",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:19.969Z"
+    },
+    {
+      "id": "audit-1791001099961-3f988",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001099961-3ftaj",
+      "details": "Created backup for audio asset asset-1791001099959-i7wub",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:19.961Z"
+    },
+    {
+      "id": "audit-1791001099961-bqchz",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001099959-i7wub",
+      "details": "Created audio asset for beat beat-1791001099959",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:18:19.961Z"
+    },
+    {
+      "id": "audit-1791001099960-ysj04",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 50000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:18:19.960Z"
+    },
+    {
+      "id": "audit-1791001004519-5i73d",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001004519-fby33",
+      "details": "Created backup for audio asset asset-1791001004518-5awkt",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:16:44.519Z"
+    },
+    {
+      "id": "audit-1791001004519-2j2wh",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001004518-5awkt",
+      "details": "Created audio asset for beat beat-1791001004518",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:16:44.519Z"
+    },
+    {
+      "id": "audit-1791001004519-xvc5x",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 67 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:16:44.519Z"
+    },
+    {
+      "id": "audit-1791001004517-50ndd",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001004517-vssz6",
+      "details": "Created backup for audio asset asset-1791001004515-ejkrp",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:16:44.517Z"
+    },
+    {
+      "id": "audit-1791001004516-com0i",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001004515-ejkrp",
+      "details": "Created audio asset for beat beat-1791001004515",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:16:44.516Z"
+    },
+    {
+      "id": "audit-1791001004516-cd8n0",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 67 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:16:44.516Z"
+    },
+    {
+      "id": "audit-1791001004514-7pwou",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001004514-jqwll",
+      "details": "Created backup for audio asset asset-1791001004511-ons1w",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:16:44.514Z"
+    },
+    {
+      "id": "audit-1791001004513-kgkjc",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001004511-ons1w",
+      "details": "Created audio asset for beat beat-1791001004511",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:16:44.513Z"
+    },
+    {
+      "id": "audit-1791001004513-ct50o",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 67 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:16:44.513Z"
+    },
+    {
+      "id": "audit-1791001004510-zukex",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001004510-99b8r",
+      "details": "Created backup for audio asset asset-1791001004508-r66z8",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:16:44.510Z"
+    },
+    {
+      "id": "audit-1791001004509-vb996",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001004508-r66z8",
+      "details": "Created audio asset for beat beat-1791001004508",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:16:44.509Z"
+    },
+    {
+      "id": "audit-1791001004509-5zwox",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 67 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:16:44.509Z"
+    },
+    {
+      "id": "audit-1791001004507-9xiwv",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791001004507-eiye9",
+      "details": "Created backup for audio asset asset-1791001004505-k2idn",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:16:44.507Z"
+    },
+    {
+      "id": "audit-1791001004506-hf37l",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791001004505-k2idn",
+      "details": "Created audio asset for beat beat-1791001004505",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:16:44.506Z"
+    },
+    {
+      "id": "audit-1791001004506-5nj3y",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 67 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:16:44.506Z"
+    },
+    {
+      "id": "audit-1791000908422-mhqrv",
+      "eventType": "BACKUP_RECORD_CREATED",
+      "entityType": "backup",
+      "entityId": "bkp-1791000908422-nw6cy",
+      "details": "Created backup for audio asset asset-1791000908419-x9qay",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:15:08.422Z"
+    },
+    {
+      "id": "audit-1791000908421-1ti67",
+      "eventType": "AUDIO_ASSET_CREATED",
+      "entityType": "audio",
+      "entityId": "asset-1791000908419-x9qay",
+      "details": "Created audio asset for beat beat-1791000908418",
+      "actor": "system",
+      "timestamp": "2026-10-03T04:15:08.421Z"
+    },
+    {
+      "id": "audit-1791000908421-qb6az",
+      "eventType": "STORAGE_ROUTED_TO_R2",
+      "entityType": "audio",
+      "entityId": "r2",
+      "details": "Routed file of size 1000 to R2 (Usage: 0.00 MB)",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T04:15:08.421Z"
+    }
+  ],
+  "analytics": []
+}

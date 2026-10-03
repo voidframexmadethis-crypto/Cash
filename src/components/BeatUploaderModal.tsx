@@ -27,6 +27,7 @@ export const BeatUploaderModal: React.FC<BeatUploaderModalProps> = ({
   // Single Beat States
   const [audioFile, setAudioFile] = useState<File | null>(null);
   const [audioFileUrl, setAudioFileUrl] = useState<string | null>(null);
+  const [audioAssetId, setAudioAssetId] = useState<string | undefined>(undefined);
   const [audioFormat, setAudioFormat] = useState<'m4a' | 'mp3'>('m4a');
   const [audioUploading, setAudioUploading] = useState(false);
   const [audioError, setAudioError] = useState<string | null>(null);
@@ -84,6 +85,9 @@ export const BeatUploaderModal: React.FC<BeatUploaderModalProps> = ({
       const res = await uploadAdminFile(token, file, 'audio');
       setAudioFileUrl(res.fileUrl);
       setAudioFormat(res.format || 'm4a');
+      if (res.audioAssetId) {
+        setAudioAssetId(res.audioAssetId);
+      }
       setAudioUploading(false);
     } catch (err: any) {
       setAudioError(err.message || 'Failed to upload audio file.');
@@ -190,6 +194,7 @@ export const BeatUploaderModal: React.FC<BeatUploaderModalProps> = ({
         isVault,
         isDraft: asDraft,
         audioUrl: audioFileUrl,
+        audioAssetId: audioAssetId,
         artworkUrl: artworkUrl || '/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg',
         format: audioFormat
       });

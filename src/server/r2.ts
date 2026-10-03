@@ -24,9 +24,18 @@ export class CloudflareR2StorageAdapter implements IStorageProvider {
     this.bucketName = credentials.bucketName;
 
     try {
+      let endpoint = credentials.endpoint;
+      if (endpoint && !endpoint.startsWith('http://') && !endpoint.startsWith('https://')) {
+        endpoint = `https://${endpoint}`;
+      }
+      // Ensure endpoint is a valid URL string
+      if (endpoint) {
+        new URL(endpoint);
+      }
+
       this.s3Client = new S3Client({
         region: 'auto',
-        endpoint: credentials.endpoint,
+        endpoint: endpoint || undefined,
         credentials: {
           accessKeyId: credentials.accessKeyId,
           secretAccessKey: credentials.secretAccessKey
@@ -34,6 +43,7 @@ export class CloudflareR2StorageAdapter implements IStorageProvider {
       });
     } catch (err) {
       console.error(`Failed to initialize Cloudflare R2 S3 Client for ${name}:`, err);
+      this.s3Client = null;
     }
   }
 

@@ -20,16 +20,17 @@ app.use(express.urlencoded({ extended: true }));
 // Set up Multer for uploads
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const isAudio = file.mimetype.includes('audio') || 
-                    file.originalname.endsWith('.m4a') || 
-                    file.originalname.endsWith('.mp3');
+    const origExt = path.extname(file.originalname || '').toLowerCase();
+    const mime = (file.mimetype || '').toLowerCase();
+    const isAudio = mime.includes('audio') || origExt === '.m4a' || origExt === '.mp3';
     const dest = isAudio ? path.resolve(process.cwd(), 'uploads/audio') : path.resolve(process.cwd(), 'uploads/artwork');
     if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
     cb(null, dest);
   },
   filename: (req, file, cb) => {
-    const ext = path.extname(file.originalname).toLowerCase();
-    const cleanName = path.basename(file.originalname, ext).replace(/[^a-zA-Z0-9_-]/g, '_');
+    const ext = path.extname(file.originalname || '').toLowerCase() || '.mp3';
+    const base = path.basename(file.originalname || 'track', path.extname(file.originalname || ''));
+    const cleanName = base.replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 80) || 'beat';
     cb(null, `${cleanName}_${Date.now()}${ext}`);
   }
 });
@@ -38,15 +39,11 @@ const upload = multer({
   storage,
   limits: { fileSize: 100 * 1024 * 1024 }, // 100MB max
   fileFilter: (req, file, cb) => {
-    const ext = path.extname(file.originalname).toLowerCase();
-    const mime = file.mimetype;
+    const ext = path.extname(file.originalname || '').toLowerCase();
+    const mime = (file.mimetype || '').toLowerCase();
 
     if (ext === '.wav' || mime.includes('wav')) {
-      return cb(new Error('WAV is not supported in this store workflow. Please upload M4A or MP3 files.'));
-    }
-
-    if (ext === '.m4a' || ext === '.mp3' || ext === '.jpg' || ext === '.jpeg' || ext === '.png' || ext === '.webp') {
-      return cb(null, true);
+      return cb(new Error('WAV files are not supported for direct storefront playback. Please upload MP3 or M4A.'));
     }
 
     cb(null, true);
@@ -69,7 +66,8 @@ const authAdmin = (req: express.Request, res: express.Response, next: express.Ne
 
 // --- AUDIO STREAMING WITH HTTP RANGE SUPPORT ---
 app.use('/uploads', (req, res, next) => {
-  const filePath = path.resolve(process.cwd(), '.' + req.path);
+  const cleanPath = req.path.startsWith('/') ? req.path.substring(1) : req.path;
+  const filePath = path.resolve(process.cwd(), 'uploads', cleanPath);
 
   if (!fs.existsSync(filePath)) {
     return res.status(404).json({ error: 'File not found on server.' });
@@ -545,44 +543,42 @@ app.post('/api/admin/offers/:id/status', authAdmin, (req, res) => {
 app.post('/api/admin/upload', authAdmin, (req, res) => {
   upload.single('file')(req, res, async (uploadErr) => {
     if (uploadErr) {
-      console.error('Multer upload error:', uploadErr);
-      return res.json({
-        success: true,
-        fileUrl: '/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg',
-        filename: 'cashmere_fallback_asset.mp3',
-        format: 'mp3',
-        size: 1024576
+      console.error('Multer upload error:', uploadErr.message);
+      return res.status(400).json({
+        error: uploadErr.message || 'File upload rejected by server.'
       });
     }
 
     if (!req.file) {
-      return res.json({
-        success: true,
-        fileUrl: '/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg',
-        filename: 'cashmere_fallback_asset.mp3',
-        format: 'mp3',
-        size: 1024576
+      return res.status(400).json({
+        error: 'No file received in upload request.'
       });
     }
 
     try {
-      const relativeUrl = `/uploads/${req.file.fieldname === 'artwork' ? 'artwork' : 'audio'}/${req.file.filename}`;
       const ext = path.extname(req.file.filename).toLowerCase();
-      const format = ext === '.m4a' ? 'm4a' : ext === '.mp3' ? 'mp3' : ext === '.zip' ? 'zip' : 'mp3';
+      const isArtwork = ext === '.jpg' || ext === '.jpeg' || ext === '.png' || ext === '.webp' || req.body.fieldname === 'artwork';
+      const isZip = ext === '.zip';
+      const isAudio = !isArtwork && !isZip && (ext === '.mp3' || ext === '.m4a');
+      const format = ext === '.m4a' ? 'm4a' : ext === '.mp3' ? 'mp3' : ext === '.zip' ? 'zip' : isArtwork ? 'jpg' : 'mp3';
+      const subfolder = isArtwork ? 'artwork' : 'audio';
+      const relativeUrl = `/uploads/${subfolder}/${req.file.filename}`;
+      const filePath = path.resolve(process.cwd(), '.' + relativeUrl);
 
       let audioAssetId: string | undefined;
-      if (req.file.fieldname !== 'artwork' && ext !== '.zip') {
-        try {
-          const filePath = path.resolve(process.cwd(), '.' + relativeUrl);
-          if (fs.existsSync(filePath)) {
-            const fileBuffer = fs.readFileSync(filePath);
-            const beatId = req.body.beatId || ('beat-' + Date.now());
-            const result = await storageManager.processVerifiedUploadAndBackup(fileBuffer, beatId, req.file.filename, format);
-            audioAssetId = result.audioAsset.id;
-          }
-        } catch (storageErr) {
-          console.error('Storage OS pipeline error (non-fatal):', storageErr);
-        }
+
+      if (isAudio && fs.existsSync(filePath)) {
+        const fileBuffer = fs.readFileSync(filePath);
+        const beatId = req.body.beatId || ('beat-' + Date.now());
+        
+        // Execute verified upload through StorageRouter & persistent AudioAsset creation
+        const result = await storageManager.processVerifiedUploadAndBackup(
+          fileBuffer,
+          beatId,
+          req.file.filename,
+          format as 'm4a' | 'mp3' | 'zip'
+        );
+        audioAssetId = result.audioAsset.id;
       }
 
       return res.json({
@@ -594,13 +590,9 @@ app.post('/api/admin/upload', authAdmin, (req, res) => {
         size: req.file.size
       });
     } catch (err: any) {
-      console.error('Upload processing error (non-fatal):', err);
-      return res.json({
-        success: true,
-        fileUrl: '/src/assets/images/pack_dark_trap_vol1_1790977520055.jpg',
-        filename: req.file?.filename || 'fallback.mp3',
-        format: 'mp3',
-        size: req.file?.size || 1024
+      console.error('Upload processing error:', err);
+      return res.status(500).json({
+        error: `Storage upload failure: ${err.message || 'Unknown processing error'}`
       });
     }
   });
@@ -642,6 +634,16 @@ app.post('/api/admin/beats', authAdmin, (req, res) => {
     };
 
     const saved = db.addBeat(newBeat);
+
+    // Link AudioAsset if audioAssetId is provided
+    if (data.audioAssetId) {
+      const asset = db.getAudioAssetById(data.audioAssetId);
+      if (asset) {
+        asset.beatId = newBeat.id;
+        db.updateAudioAsset(asset);
+      }
+    }
+
     res.json(saved);
   } catch (err: any) {
     res.status(500).json({ error: err.message });
@@ -714,6 +716,20 @@ app.put('/api/admin/settings', authAdmin, (req, res) => {
   res.json(updated);
 });
 
+// Global JSON error handler to ensure API routes never return HTML error pages
+app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
+  if (res.headersSent) {
+    return next(err);
+  }
+  console.error('Unhandled server error:', err);
+  if (req.path.startsWith('/api/')) {
+    return res.status(err.status || 500).json({
+      error: err.message || 'Internal server error occurred'
+    });
+  }
+  next(err);
+});
+
 async function startServer() {
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
@@ -734,4 +750,8 @@ async function startServer() {
   });
 }
 
-startServer();
+if (process.env.VERCEL !== '1') {
+  startServer();
+}
+
+export { app };

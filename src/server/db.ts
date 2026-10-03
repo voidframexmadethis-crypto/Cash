@@ -215,6 +215,16 @@ class JsonDatabase {
     return asset;
   }
 
+  public updateAudioAsset(asset: AudioAsset): AudioAsset | null {
+    const idx = this.data.audioAssets.findIndex(a => a.id === asset.id);
+    if (idx !== -1) {
+      this.data.audioAssets[idx] = asset;
+      this.save();
+      return asset;
+    }
+    return null;
+  }
+
   public getBackupRecords(): BackupRecord[] {
     return this.data.backupRecords;
   }

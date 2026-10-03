@@ -22,9 +22,12 @@ export class InternetArchiveStorageAdapter implements IStorageProvider {
     this.itemName = credentials.itemName;
 
     try {
+      const endpoint = 'https://s3.us.archive.org';
+      new URL(endpoint);
+
       this.s3Client = new S3Client({
         region: 'us-east-1', // Required default region for Archive.org S3
-        endpoint: 'https://s3.us.archive.org',
+        endpoint,
         credentials: {
           accessKeyId: credentials.accessKeyId,
           secretAccessKey: credentials.secretAccessKey
@@ -32,6 +35,7 @@ export class InternetArchiveStorageAdapter implements IStorageProvider {
       });
     } catch (err) {
       console.error(`Failed to initialize Internet Archive S3 Client for ${name}:`, err);
+      this.s3Client = null;
     }
   }
 
