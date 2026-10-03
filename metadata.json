@@ -1,0 +1,8 @@
+{
+  "name": "CASHMERE KID$ Beat Store",
+  "description": "Official independent beat store for CASHMERE KID$. Premium underground trap beats, beat packs, and sound collections.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
