@@ -7,7 +7,7 @@ import {
 export const RecoveryCenterPage: React.FC = () => {
   const [diagnostics, setDiagnostics] = useState<any>(null);
   const [loading, setLoading] = useState(true);
-  const [authToken] = useState(() => localStorage.getItem('cashmere_admin_token') || 'cashmere-admin-token-2026');
+  const [authToken] = useState(() => localStorage.getItem('cashmere_admin_token'));
 
   const loadDiagnostics = async () => {
     setLoading(true);

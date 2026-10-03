@@ -604,6 +604,16 @@ app.post('/api/admin/upload', authAdmin, (req, res) => {
           format as 'm4a' | 'mp3' | 'zip'
         );
         audioAssetId = result.audioAsset.id;
+      } else if (isArtwork && fs.existsSync(filePath)) {
+        // Enforce fail-closed routing for artwork in production
+        const { StorageRouter } = await import('./src/server/storageRouter.js');
+        const fileBuffer = fs.readFileSync(filePath);
+        const mimeType = req.file.mimetype || 'image/jpeg';
+        const activeProvider = await StorageRouter.selectProvider(fileBuffer.length, mimeType, 'artwork');
+        
+        // If we reach here, we have a provider (or it's dev mode)
+        const canonicalKey = `artwork_${Date.now()}_${req.file.filename}`;
+        await activeProvider.putObject(fileBuffer, canonicalKey, mimeType);
       }
 
       return res.json({
@@ -616,6 +626,15 @@ app.post('/api/admin/upload', authAdmin, (req, res) => {
       });
     } catch (err: any) {
       console.error('Upload processing error:', err);
+      
+      if (err.message === 'PERSISTENT_STORAGE_UNAVAILABLE') {
+        return res.status(503).json({
+          success: false,
+          code: "PERSISTENT_STORAGE_UNAVAILABLE",
+          error: "No persistent storage provider is currently available."
+        });
+      }
+
       return res.status(500).json({
         error: `Storage upload failure: ${err.message || 'Unknown processing error'}`
       });
@@ -733,7 +752,26 @@ app.get('/api/admin/orders', authAdmin, (req, res) => {
 });
 
 app.get('/api/admin/settings', authAdmin, (req, res) => {
-  res.json(db.getSettings());
+  const settings = db.getSettings();
+  res.json({
+    ...settings,
+    paypalSecret: settings.paypalSecret ? '[REDACTED]' : '',
+    adminPasscodeHash: '[REDACTED]'
+  });
+});
+
+app.post('/api/admin/login', (req, res) => {
+  const { passcode } = req.body;
+  const settings = db.getSettings();
+  
+  // Use environment variables for the admin token if possible
+  const adminToken = process.env.ADMIN_TOKEN || 'cashmere-admin-session-' + Date.now();
+  
+  if (passcode === settings.adminPasscodeHash || (process.env.ADMIN_PASSCODE && passcode === process.env.ADMIN_PASSCODE)) {
+    return res.json({ success: true, token: adminToken });
+  }
+  
+  res.status(401).json({ error: 'Invalid admin passcode.' });
 });
 
 app.put('/api/admin/settings', authAdmin, (req, res) => {

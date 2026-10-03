@@ -26,11 +26,9 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
   openPromotions,
   openSessionMode
 }) => {
-  const [passcode, setPasscode] = useState('199927');
+  const [passcode, setPasscode] = useState('');
   const [authToken, setAuthToken] = useState<string | null>(() => {
-    const token = 'cashmere-admin-token-2026';
-    localStorage.setItem('cashmere_admin_token', token);
-    return token;
+    return localStorage.getItem('cashmere_admin_token');
   });
   const [loginError, setLoginError] = useState<string | null>(null);
   const [loadingLogin, setLoadingLogin] = useState(false);
@@ -274,11 +272,11 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                 required
                 value={passcode}
                 onChange={(e) => setPasscode(e.target.value)}
-                placeholder="199927"
+                placeholder="••••••"
                 className="w-full px-4 py-3 bg-zinc-900 border border-purple-500/80 focus:border-purple-400 rounded-xl text-white text-base font-mono focus:outline-none tracking-widest text-center shadow"
               />
-              <p className="text-[11px] text-purple-400 font-mono text-center mt-1">
-                🔑 Administration passcode <span className="font-bold">199927</span> is pre-filled and waiting.
+              <p className="text-[11px] text-zinc-500 font-mono text-center mt-1">
+                Enter your administrative passcode to continue.
               </p>
             </div>
 
@@ -333,7 +331,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
     { id: 'orders', label: 'Orders & Sales', icon: ShoppingBag },
     { id: 'analytics', label: 'Analytics', icon: BarChart3 },
     { id: 'plaques', label: 'Plaque Hall of Fame', icon: Award },
-    { id: 'payment', label: 'Store & Payment Settings', icon: CreditCard },
+    { id: 'payment', label: 'Store Settings', icon: CreditCard },
   ];
 
   return (
@@ -973,71 +971,29 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
           </div>
         )}
 
-        {/* PAYMENT SETTINGS TAB */}
+        {/* STORE SETTINGS TAB */}
         {activeSidebarTab === 'payment' && (
           <div className="p-6 md:p-8 bg-zinc-950 border border-zinc-900 rounded-3xl space-y-6 shadow-xl">
             <div>
-              <h2 className="text-2xl font-bold font-display text-white">PayPal Integration Settings</h2>
+              <h2 className="text-2xl font-bold font-display text-white">Store Identity Settings</h2>
               <p className="text-xs text-zinc-400 mt-1">
-                Keep credentials server-side. The backend uses these secrets to verify payment capture amounts before granting downloads.
+                Configure your public producer profile. Integration credentials (Storage, PayPal) are managed via secure server-side environment variables.
               </p>
             </div>
 
-            <form onSubmit={handleSavePaymentSettings} className="space-y-4">
-              <div>
-                <label className="block text-xs font-mono font-bold text-zinc-300 uppercase mb-1">
-                  PayPal Client ID
-                </label>
-                <input
-                  type="text"
-                  value={paypalClientId}
-                  onChange={(e) => setPaypalClientId(e.target.value)}
-                  placeholder="Paste PayPal Client ID"
-                  className="w-full px-4 py-3 bg-zinc-900 border border-zinc-800 rounded-xl text-white text-xs font-mono focus:outline-none focus:border-purple-500"
-                />
+            <div className="p-4 bg-purple-900/10 border border-purple-800/30 rounded-2xl">
+              <div className="flex items-center gap-3 text-purple-300 font-mono text-xs">
+                <ShieldCheck className="w-4 h-4" />
+                <span>NO MANUAL CREDENTIALS Production Lock Active</span>
               </div>
+            </div>
 
-              <div>
-                <label className="block text-xs font-mono font-bold text-zinc-300 uppercase mb-1">
-                  PayPal Client Secret
-                </label>
-                <input
-                  type="password"
-                  value={paypalSecret}
-                  onChange={(e) => setPaypalSecret(e.target.value)}
-                  placeholder="Paste PayPal Client Secret"
-                  className="w-full px-4 py-3 bg-zinc-900 border border-zinc-800 rounded-xl text-white text-xs font-mono focus:outline-none focus:border-purple-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-mono font-bold text-zinc-300 uppercase mb-1">
-                  Environment Mode
-                </label>
-                <select
-                  value={paypalMode}
-                  onChange={(e: any) => setPaypalMode(e.target.value)}
-                  className="w-full px-4 py-3 bg-zinc-900 border border-zinc-800 rounded-xl text-white text-xs font-mono focus:outline-none focus:border-purple-500"
-                >
-                  <option value="sandbox">Sandbox Testing Mode</option>
-                  <option value="live">Live Production Mode</option>
-                </select>
-              </div>
-
-              {saveSettingsSuccess && (
-                <div className="p-3 bg-emerald-950/60 border border-emerald-800 text-emerald-300 text-xs rounded-xl flex items-center gap-2 font-mono">
-                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>PayPal credentials saved securely to server settings!</span>
-                </div>
-              )}
-
-              <button
-                type="submit"
-                className="w-full py-3.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs font-mono uppercase shadow-lg purple-glow"
-              >
-                SAVE PAYMENT CREDENTIALS
-              </button>
-            </form>
+            <div className="space-y-4">
+               {/* Non-sensitive settings could be added here if needed, like store name/bio */}
+               <div className="text-zinc-500 text-xs font-mono py-8 text-center border border-zinc-900 rounded-2xl border-dashed">
+                 Store profile attributes are currently locked to environment defaults.
+               </div>
+            </div>
           </div>
         )}
 

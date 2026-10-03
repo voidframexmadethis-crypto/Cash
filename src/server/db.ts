@@ -43,10 +43,10 @@ const DEFAULT_SETTINGS: StoreSettings = {
   bio: "Independent trap producer creating luxury underground beats, hard-hitting 808s, and ambient melodies.",
   bannerUrl: "/src/assets/images/hero_cashmere_kids_1790977501320.jpg",
   profileImageUrl: "/src/assets/images/producer_cashmere_kids_1790977511588.jpg",
-  paypalClientId: "",
-  paypalSecret: "",
-  paypalMode: "sandbox",
-  adminPasscodeHash: "199927",
+  paypalClientId: process.env.PAYPAL_CLIENT_ID || "",
+  paypalSecret: process.env.PAYPAL_CLIENT_SECRET || "",
+  paypalMode: (process.env.PAYPAL_MODE as 'sandbox' | 'live') || "sandbox",
+  adminPasscodeHash: process.env.ADMIN_PASSCODE || "admin-pass-2026",
   currency: "USD",
   socialLinks: {
     youtube: "https://youtube.com",
@@ -124,7 +124,7 @@ class JsonDatabase {
           orders: parsed.orders || [],
           merch: parsed.merch || [],
           youtube: parsed.youtube || [],
-          settings: { ...DEFAULT_SETTINGS, adminPasscodeHash: "199927", ...(parsed.settings || {}) },
+          settings: { ...DEFAULT_SETTINGS, ...(parsed.settings || {}) },
           offers: parsed.offers || [],
           messages: parsed.messages || [],
           audioAssets: parsed.audioAssets || [],
@@ -553,9 +553,17 @@ class JsonDatabase {
   }
 
   public updateSettings(update: Partial<StoreSettings>): StoreSettings {
+    // SECURITY LOCK: Do not allow overwriting PayPal or R2 secrets via the API
+    const sanitizedUpdate = { ...update };
+    delete sanitizedUpdate.paypalClientId;
+    delete sanitizedUpdate.paypalSecret;
+    delete sanitizedUpdate.adminPasscodeHash;
+    delete (sanitizedUpdate as any).r2AccessKeyId;
+    delete (sanitizedUpdate as any).r2SecretAccessKey;
+
     this.data.settings = {
       ...this.data.settings,
-      ...update
+      ...sanitizedUpdate
     };
     this.save();
     return this.data.settings;

@@ -220,12 +220,12 @@ export class LocalStorageProvider implements IStorageProvider {
   }
 }
 
-const r2Endpoint = process.env.CLOUDFLARE_R2_ENDPOINT;
-const r2AccessKey = process.env.CLOUDFLARE_R2_ACCESS_KEY_ID;
-const r2SecretKey = process.env.CLOUDFLARE_R2_SECRET_ACCESS_KEY;
+const r2Endpoint = process.env.CLOUDFLARE_R2_ENDPOINT || process.env.R2_ENDPOINT;
+const r2AccessKey = process.env.CLOUDFLARE_R2_ACCESS_KEY_ID || process.env.R2_ACCESS_KEY_ID;
+const r2SecretKey = process.env.CLOUDFLARE_R2_SECRET_ACCESS_KEY || process.env.R2_SECRET_ACCESS_KEY;
 const r2Bucket = process.env.CLOUDFLARE_R2_BUCKET_NAME || 'cashmere-kids-store';
 
-export const primaryAudioProvider = r2Endpoint && r2AccessKey && r2SecretKey
+export const primaryAudioProvider = (r2Endpoint && r2AccessKey && r2SecretKey)
   ? new CloudflareR2StorageAdapter('cloudflare_r2_audio', 'PRIMARY', {
       endpoint: r2Endpoint,
       accessKeyId: r2AccessKey,
@@ -234,7 +234,7 @@ export const primaryAudioProvider = r2Endpoint && r2AccessKey && r2SecretKey
     })
   : new LocalStorageProvider('local_primary_audio', 'PRIMARY', 'audio');
 
-export const primaryArtworkProvider = r2Endpoint && r2AccessKey && r2SecretKey
+export const primaryArtworkProvider = (r2Endpoint && r2AccessKey && r2SecretKey)
   ? new CloudflareR2StorageAdapter('cloudflare_r2_artwork', 'PRIMARY', {
       endpoint: r2Endpoint,
       accessKeyId: r2AccessKey,
@@ -245,11 +245,11 @@ export const primaryArtworkProvider = r2Endpoint && r2AccessKey && r2SecretKey
 
 export const backupAudioProvider = new LocalStorageProvider('local_mirror_backup', 'BACKUP', 'backups');
 
-const iaAccessKey = process.env.INTERNET_ARCHIVE_ACCESS_KEY;
-const iaSecretKey = process.env.INTERNET_ARCHIVE_SECRET_KEY;
+const iaAccessKey = process.env.INTERNET_ARCHIVE_ACCESS_KEY || process.env.IA_ACCESS_KEY;
+const iaSecretKey = process.env.INTERNET_ARCHIVE_SECRET_KEY || process.env.IA_SECRET_KEY;
 const iaItemName = process.env.INTERNET_ARCHIVE_ITEM_NAME || 'cashmere-kids-store-catalog';
 
-export const archiveAudioProvider = iaAccessKey && iaSecretKey
+export const archiveAudioProvider = (iaAccessKey && iaSecretKey)
   ? new InternetArchiveStorageAdapter('internet_archive', 'ARCHIVE', {
       accessKeyId: iaAccessKey,
       secretAccessKey: iaSecretKey,
@@ -276,7 +276,8 @@ export class StorageOSManager {
 
     // 2. Query StorageRouter for the optimal active provider dynamically to avoid circular dependencies
     const { StorageRouter } = await import('./storageRouter.js');
-    const activeProvider = await StorageRouter.selectProvider(fileBuffer.length, mimeType);
+    const assetType: 'audio' | 'artwork' | 'zip' = format === 'zip' ? 'zip' : 'audio';
+    const activeProvider = await StorageRouter.selectProvider(fileBuffer.length, mimeType, assetType);
 
     // 3. Put in Selected Storage Provider
     const primaryMeta = await activeProvider.putObject(fileBuffer, canonicalKey, mimeType);

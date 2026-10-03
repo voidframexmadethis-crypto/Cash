@@ -113,10 +113,10 @@ var init_db = __esm({
       bio: "Independent trap producer creating luxury underground beats, hard-hitting 808s, and ambient melodies.",
       bannerUrl: "/src/assets/images/hero_cashmere_kids_1790977501320.jpg",
       profileImageUrl: "/src/assets/images/producer_cashmere_kids_1790977511588.jpg",
-      paypalClientId: "",
-      paypalSecret: "",
-      paypalMode: "sandbox",
-      adminPasscodeHash: "199927",
+      paypalClientId: process.env.PAYPAL_CLIENT_ID || "",
+      paypalSecret: process.env.PAYPAL_CLIENT_SECRET || "",
+      paypalMode: process.env.PAYPAL_MODE || "sandbox",
+      adminPasscodeHash: process.env.ADMIN_PASSCODE || "admin-pass-2026",
       currency: "USD",
       socialLinks: {
         youtube: "https://youtube.com",
@@ -186,7 +186,7 @@ var init_db = __esm({
               orders: parsed.orders || [],
               merch: parsed.merch || [],
               youtube: parsed.youtube || [],
-              settings: { ...DEFAULT_SETTINGS, adminPasscodeHash: "199927", ...parsed.settings || {} },
+              settings: { ...DEFAULT_SETTINGS, ...parsed.settings || {} },
               offers: parsed.offers || [],
               messages: parsed.messages || [],
               audioAssets: parsed.audioAssets || [],
@@ -1272,9 +1272,9 @@ var init_storage = __esm({
         }
       }
     };
-    r2Endpoint = process.env.CLOUDFLARE_R2_ENDPOINT;
-    r2AccessKey = process.env.CLOUDFLARE_R2_ACCESS_KEY_ID;
-    r2SecretKey = process.env.CLOUDFLARE_R2_SECRET_ACCESS_KEY;
+    r2Endpoint = process.env.CLOUDFLARE_R2_ENDPOINT || process.env.R2_ENDPOINT;
+    r2AccessKey = process.env.CLOUDFLARE_R2_ACCESS_KEY_ID || process.env.R2_ACCESS_KEY_ID;
+    r2SecretKey = process.env.CLOUDFLARE_R2_SECRET_ACCESS_KEY || process.env.R2_SECRET_ACCESS_KEY;
     r2Bucket = process.env.CLOUDFLARE_R2_BUCKET_NAME || "cashmere-kids-store";
     primaryAudioProvider = r2Endpoint && r2AccessKey && r2SecretKey ? new CloudflareR2StorageAdapter("cloudflare_r2_audio", "PRIMARY", {
       endpoint: r2Endpoint,
@@ -1289,8 +1289,8 @@ var init_storage = __esm({
       bucketName: r2Bucket
     }) : new LocalStorageProvider("local_primary_artwork", "PRIMARY", "artwork");
     backupAudioProvider = new LocalStorageProvider("local_mirror_backup", "BACKUP", "backups");
-    iaAccessKey = process.env.INTERNET_ARCHIVE_ACCESS_KEY;
-    iaSecretKey = process.env.INTERNET_ARCHIVE_SECRET_KEY;
+    iaAccessKey = process.env.INTERNET_ARCHIVE_ACCESS_KEY || process.env.IA_ACCESS_KEY;
+    iaSecretKey = process.env.INTERNET_ARCHIVE_SECRET_KEY || process.env.IA_SECRET_KEY;
     iaItemName = process.env.INTERNET_ARCHIVE_ITEM_NAME || "cashmere-kids-store-catalog";
     archiveAudioProvider = iaAccessKey && iaSecretKey ? new InternetArchiveStorageAdapter("internet_archive", "ARCHIVE", {
       accessKeyId: iaAccessKey,
@@ -2681,7 +2681,21 @@ app.get("/api/admin/orders", authAdmin, (req, res) => {
   res.json(db.getOrders());
 });
 app.get("/api/admin/settings", authAdmin, (req, res) => {
-  res.json(db.getSettings());
+  const settings = db.getSettings();
+  res.json({
+    ...settings,
+    paypalSecret: settings.paypalSecret ? "[REDACTED]" : "",
+    adminPasscodeHash: "[REDACTED]"
+  });
+});
+app.post("/api/admin/login", (req, res) => {
+  const { passcode } = req.body;
+  const settings = db.getSettings();
+  const adminToken = process.env.ADMIN_TOKEN || "cashmere-admin-session-" + Date.now();
+  if (passcode === settings.adminPasscodeHash || process.env.ADMIN_PASSCODE && passcode === process.env.ADMIN_PASSCODE) {
+    return res.json({ success: true, token: adminToken });
+  }
+  res.status(401).json({ error: "Invalid admin passcode." });
 });
 app.put("/api/admin/settings", authAdmin, (req, res) => {
   const updated = db.updateSettings(req.body);

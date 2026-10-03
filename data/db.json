@@ -326,7 +326,7 @@
     "paypalClientId": "",
     "paypalSecret": "",
     "paypalMode": "sandbox",
-    "adminPasscodeHash": "199927",
+    "adminPasscodeHash": "admin-pass-2026",
     "currency": "USD",
     "socialLinks": {
       "youtube": "https://youtube.com",
@@ -1456,6 +1456,15 @@
   ],
   "projects": [],
   "auditEvents": [
+    {
+      "id": "audit-1791007320919-hmf4s",
+      "eventType": "STORAGE_UPLOAD_FAILED",
+      "entityType": "audio",
+      "entityId": "fail-closed",
+      "details": "CRITICAL: No persistent storage provider available in production for audio. Upload aborted.",
+      "actor": "StorageRouter",
+      "timestamp": "2026-10-03T06:02:00.919Z"
+    },
     {
       "id": "audit-1791003252068-1ax0k",
       "eventType": "BEAT_CREATED",

@@ -7,7 +7,7 @@ import {
 export const SecurityCenterPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [integrityReport, setIntegrityReport] = useState<any>(null);
-  const [authToken] = useState(() => localStorage.getItem('cashmere_admin_token') || 'cashmere-admin-token-2026');
+  const [authToken] = useState(() => localStorage.getItem('cashmere_admin_token'));
 
   const runSecurityChecks = async () => {
     setLoading(true);
